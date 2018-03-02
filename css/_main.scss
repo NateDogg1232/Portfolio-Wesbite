@@ -1,0 +1,20 @@
+//Global classes etc.
+
+$back-color: #f6f5f5;
+$fore-color: 121212;
+$accent-color: #ffff00;
+$action-color: #4CCC14;
+
+//Import our font
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: $back-color;
+}
+
+header {
+    
+}
