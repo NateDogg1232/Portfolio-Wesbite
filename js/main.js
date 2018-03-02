@@ -1,0 +1,1 @@
+//Put all global functions in here
