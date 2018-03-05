@@ -40,9 +40,10 @@ header {
   align-items: center; }
 
 #hamburger {
-  position: absolute;
-  left: 50px;
-  top: 50px; }
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  transition-duration: 1s; }
   #hamburger img {
     display: inline-block;
     width: 50px;
@@ -55,7 +56,7 @@ header {
   padding: 10px;
   visibility: hidden;
   width: 100px;
-  transition-duration: 2s;
+  transition-duration: 1s;
   background-color: #121212; }
   #hamburger-menu ul {
     list-style: none;
