@@ -4,6 +4,8 @@ var fs = require('fs');
 const cssFolder = "css"
 const sassFolder = "sass"
 
+console.log(new Date());
+
 function compile(file) {
     sass.render({
         file: sassFolder + "/" + file + ".scss",
@@ -23,6 +25,8 @@ function compile(file) {
         });
     });
 }
+
+//TODO: Make a watcher to check for new files and file changes
 
 //Iterate through all the sass files in the
 fs.readdir("sass/", function (err, items) {

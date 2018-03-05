@@ -4,3 +4,34 @@ body {
   font-size: 20px;
   font-family: 'Roboto Mono', monospace;
   background-color: #f6f5f5; }
+
+.horizrule {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .horizrule hr {
+    display: inline-block;
+    border-color: #121212;
+    width: 40%;
+    height: 1px; }
+  .horizrule .circle {
+    display: inline-block;
+    border: 5px solid #fafa00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; }
+
+.pagewrap {
+  max-width: 1000px;
+  margin: auto; }
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  header .hamburger img {
+    display: inline-block;
+    width: 50px;
+    height: 50px; }
