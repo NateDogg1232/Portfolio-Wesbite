@@ -4,7 +4,8 @@ body {
   margin: 0;
   font-size: 20px;
   font-family: 'Roboto Mono', monospace;
-  background-color: #f6f5f5; }
+  background-color: #f6f5f5;
+  color: #121212; }
 
 .horizrule {
   padding-top: 20px;
@@ -65,6 +66,15 @@ header {
     transition: 1s;
     border-radius: 0px; }
 
+#hamburger.transition {
+  left: 300px; }
+  #hamburger.transition #bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  #hamburger.transition #bar2 {
+    opacity: 0; }
+  #hamburger.transition #bar3 {
+    transform: rotate(45deg) translate(-8px, -8px); }
+
 #hamburger-menu {
   position: fixed;
   height: 100vh;
@@ -72,11 +82,14 @@ header {
   visibility: hidden;
   width: 100px;
   transition-duration: 1s;
-  background-color: #121212; }
+  background-color: #121212;
+  opacity: 0.8;
+  filter: blur(1px); }
   #hamburger-menu ul {
     list-style: none;
     padding: 0px;
-    margin: 0px; }
+    margin: 0px;
+    filter: blur(0px); }
   #hamburger-menu a {
     display: inline-block;
     width: 100%;
@@ -88,4 +101,7 @@ header {
     background-color: #fff200;
     color: #121212; }
 
-/*# sourceMappingURL=index.css.map */
+#hamburger-menu.transition {
+  margin-left: 0px;
+  width: 300px;
+  visibility: visible; }
