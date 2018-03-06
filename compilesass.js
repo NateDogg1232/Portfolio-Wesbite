@@ -6,10 +6,10 @@ const sassFolder = "sass";
 
 var fsTimeout = false;
 
-console.log(new Date());
+console.log("Started");
 
 function compile(file) {
-    console.log("Compiling" + file);
+    console.log("Compiling " + file);
     sass.render({
         file: sassFolder + "/" + file + ".scss",
         outFile: cssFolder + "/" + file + ".css"
@@ -29,7 +29,7 @@ function compile(file) {
     });
 }
 
-//TODO: Make a watcher to check for new files and file changes
+//TODO: Make the watcher that checks for new files and file changes better
 
 function fileChanged(eventType, fileName) {
     if (!fsTimeout) {
@@ -37,7 +37,7 @@ function fileChanged(eventType, fileName) {
             if (fileName.substr(fileName.length - 5) == ".scss") {
                 if (fileName.substring(0, 1) == "_") {
                     //This is a library file, so we need to compile all files
-                    console.log("Compile all files");
+                    console.log("Library changed, compiling all files");
                     //Iterate through each file, and compile them
                     fs.readdir("sass/", function (err, items) {
 

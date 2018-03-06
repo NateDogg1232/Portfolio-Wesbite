@@ -89,6 +89,7 @@ header {
         margin: 6px 0;
         transition: 1s;
         border-radius: 0px;
+        
     }
 }
 #hamburger.transition {
@@ -112,13 +113,11 @@ header {
     width: 100px;
     transition-duration: 1s;
     background-color: $fore-color;
-    opacity: 0.8;
-    filter: blur(1px);
+    opacity: 0.99;
     ul {
         list-style: none;
         padding: 0px;
         margin: 0px;
-        filter: blur(0px);
     }
     a {
         display: inline-block;
