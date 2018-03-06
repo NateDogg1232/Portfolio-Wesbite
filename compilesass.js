@@ -6,8 +6,6 @@ const sassFolder = "sass";
 
 var fsTimeout = false;
 
-console.log("Started");
-
 function compile(file) {
     console.log("Compiling " + file);
     sass.render({
@@ -39,11 +37,11 @@ function fileChanged(eventType, fileName) {
                     //This is a library file, so we need to compile all files
                     console.log("Library changed, compiling all files");
                     //Iterate through each file, and compile them
-                    fs.readdir("sass/", function (err, items) {
+                    fs.readdir(sassFolder + "/", function (err, items) {
 
                         for (var i = 0; i < items.length; i++) {
                             let item = items[i].toString();
-                            if (fileName.substr(item.length - 5) == ".scss") {
+                            if (item.substr(item.length - 5) == ".scss") {
                                 //Check to make sure that it's not a library file
                                 if (item.substring(0, 1) != "_") {
                                     console.log("Compiling " + item);
@@ -65,8 +63,29 @@ function fileChanged(eventType, fileName) {
 }
 
 
+//Compile all files in the directory upon startup
+console.log("Compiling all files")
+//Iterate through each file, and compile them
+fs.readdir(sassFolder + "/", function (err, items) {
+
+    for (var i = 0; i < items.length; i++) {
+        let item = items[i].toString();
+        if (item.substr(item.length - 5) == ".scss") {
+            //Check to make sure that it's not a library file
+            if (item.substring(0, 1) != "_") {
+                console.log("Compiling " + item);
+                compile(item.substring(0, item.length - 5));
+            }
+        }
+    }
+});
+
+
 //Watch the directory
-fs.watch("sass/", {
+fs.watch(sassFolder + "/", {
     recursive: true,
     encoding: "utf8"
 }, fileChanged);
+
+//Tell the user that it has started watching
+console.log("Watching all files in " + sassFolder);
