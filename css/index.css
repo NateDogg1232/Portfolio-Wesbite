@@ -89,7 +89,8 @@ header {
   width: 100px;
   transition-duration: 1s;
   background-color: #121212;
-  opacity: 0.99; }
+  opacity: 0.95;
+  z-index: 100000000000000; }
   #hamburger-menu ul {
     list-style: none;
     padding: 0px;
@@ -112,3 +113,46 @@ header {
 
 .centertext {
   text-align: center; }
+
+a.card {
+  padding: 0px 20px;
+  margin: 0;
+  display: block;
+  color: #121212;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 20px; }
+
+a.card:visited {
+  color: #121212; }
+
+a.card:active {
+  border: none; }
+
+a.card:hover {
+  color: #121212; }
+  a.card:hover .heading {
+    filter: none; }
+
+.action-hover:hover {
+  color: #4CCC14; }
+
+.action-hover {
+  text-align: right; }
+
+.heading {
+  transition-duration: 0.5s;
+  filter: blur(1.5px); }
+
+a.card section {
+  display: flex;
+  justify-content: space-between; }
+
+#about .heading {
+  background-image: url("http://via.placeholder.com/350x150");
+  width: 30%;
+  height: 300px; }
+#about .info {
+  width: 50%; }
+
+/*# sourceMappingURL=index.css.map */

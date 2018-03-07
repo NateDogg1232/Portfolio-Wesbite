@@ -96,7 +96,7 @@ header {
         margin: 6px 0;
         transition: 1s;
         border-radius: 0px;
-        
+
     }
 }
 #hamburger.transition {
@@ -120,7 +120,8 @@ header {
     width: 100px;
     transition-duration: 1s;
     background-color: $fore-color;
-    opacity: 0.99;
+    opacity: 0.95;
+    z-index: 100000000000000;
     ul {
         list-style: none;
         padding: 0px;

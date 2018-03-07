@@ -1,3 +1,57 @@
 //Import the main SCSS file
 
 @import 'main';
+
+
+a.card {
+	padding: 0px 20px;
+	margin: 0;
+	display: block;
+	color: $fore-color;
+	text-decoration: none;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+a.card:visited {
+	color: $fore-color;
+}
+ a.card:active {
+ 	border: none;
+ }
+a.card:hover {
+	color: $fore-color;
+	.heading {
+		filter: none;
+	}
+}
+
+.action-hover:hover {
+	color: $action-color;
+}
+
+.action-hover {
+	text-align: right;
+}
+
+.heading {
+	transition-duration: 0.5s;
+	filter: blur(1.5px);
+}
+
+a.card section {
+	display: flex;
+	justify-content: space-between;
+}
+
+//Beginning of the card layouts
+#about {
+	.heading {
+		background-image: url('http://via.placeholder.com/350x150');
+		width: 30%;
+		height: 300px;
+	}
+	.info {
+		width: 50%;
+	}
+}
