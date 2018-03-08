@@ -139,6 +139,29 @@ header {
         background-color: $accent-color;
         color: $fore-color;
     }
+    .linkcontainer {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: $back-color;
+    }
+    .linkcontainer:hover {
+        background-color: $accent-color;
+        color: $fore-color;
+    }
+    .linkcontainer:hover+.hiddenlist {
+        height: inherit;
+    }
+    .linkcontainer+.hiddenlist {
+        display: block;
+        height: 0;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        transition-duration: 1s;
+    }
 
 }
 
@@ -147,7 +170,7 @@ header {
     width: 300px;
     visibility: visible;
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 .centertext {
     text-align: center;
 }

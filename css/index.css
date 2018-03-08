@@ -105,6 +105,25 @@ header {
   #hamburger-menu a:hover {
     background-color: #efda00;
     color: #121212; }
+  #hamburger-menu .linkcontainer {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #f6f5f5; }
+  #hamburger-menu .linkcontainer:hover {
+    background-color: #efda00;
+    color: #121212; }
+  #hamburger-menu .linkcontainer:hover + .hiddenlist {
+    height: inherit; }
+  #hamburger-menu .linkcontainer + .hiddenlist {
+    display: block;
+    height: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition-duration: 1s; }
 
 #hamburger-menu.transition {
   margin-left: 0px;
@@ -132,7 +151,8 @@ a.card:active {
 a.card:hover {
   color: #121212; }
   a.card:hover .heading {
-    filter: none; }
+    filter: blur(0.2px);
+    -webkit-transform: translateZ(0); }
 
 .action-hover:hover {
   color: #4CCC14; }
@@ -142,17 +162,17 @@ a.card:hover {
 
 .heading {
   transition-duration: 0.5s;
-  filter: blur(1.5px); }
+  filter: blur(1.5px);
+  -webkit-transform: translateZ(0);
+  width: 30%;
+  height: 300px; }
 
 a.card section {
   display: flex;
   justify-content: space-between; }
 
-#about .heading {
-  background-image: url("http://via.placeholder.com/350x150");
-  width: 30%;
-  height: 300px; }
-#about .info {
+.info {
   width: 50%; }
 
-/*# sourceMappingURL=index.css.map */
+#about .heading {
+  background-image: url("http://via.placeholder.com/350x150"); }

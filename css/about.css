@@ -105,6 +105,25 @@ header {
   #hamburger-menu a:hover {
     background-color: #efda00;
     color: #121212; }
+  #hamburger-menu .linkcontainer {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #f6f5f5; }
+  #hamburger-menu .linkcontainer:hover {
+    background-color: #efda00;
+    color: #121212; }
+  #hamburger-menu .linkcontainer:hover + .hiddenlist {
+    height: inherit; }
+  #hamburger-menu .linkcontainer + .hiddenlist {
+    display: block;
+    height: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition-duration: 1s; }
 
 #hamburger-menu.transition {
   margin-left: 0px;
@@ -113,5 +132,3 @@ header {
 
 .centertext {
   text-align: center; }
-
-/*# sourceMappingURL=about.css.map */
