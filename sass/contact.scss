@@ -1,0 +1,40 @@
+//Import the main library
+@import 'main';
+
+
+.cardcontainer {
+    overflow: hidden;
+    width: 100%;
+    .card {
+        height: 500px;
+        width: 400px;
+        overflow: hidden;
+        .img {
+            height: 300px;
+            width: 100%;
+            color: $fore-color;
+        }
+        .head {
+            text-align: center;
+        }
+        //link
+        .link a:hover {
+            color: $action-color;
+        }
+        .link {
+            text-align: center;
+        }
+        .link a {
+            text-align: center;
+            color: $fore-color;
+        }
+        .link a:visited {
+            color: $fore-color;
+        }
+    }
+}
+
+article {
+    display: flex;
+    align-items: center;
+}

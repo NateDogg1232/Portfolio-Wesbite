@@ -133,46 +133,29 @@ header {
 .centertext {
   text-align: center; }
 
-a.card {
-  padding: 0px 20px;
-  margin: 0;
-  display: block;
-  color: #121212;
-  text-decoration: none;
-  text-align: left;
-  margin-bottom: 20px; }
+.cardcontainer {
+  overflow: hidden;
+  width: 100%; }
+  .cardcontainer .card {
+    height: 500px;
+    width: 400px;
+    overflow: hidden; }
+    .cardcontainer .card .img {
+      height: 300px;
+      width: 100%;
+      color: #121212; }
+    .cardcontainer .card .head {
+      text-align: center; }
+    .cardcontainer .card .link a:hover {
+      color: #4CCC14; }
+    .cardcontainer .card .link {
+      text-align: center; }
+    .cardcontainer .card .link a {
+      text-align: center;
+      color: #121212; }
+    .cardcontainer .card .link a:visited {
+      color: #121212; }
 
-a.card:visited {
-  color: #121212; }
-
-a.card:active {
-  border: none; }
-
-a.card:hover {
-  color: #121212; }
-  a.card:hover .heading {
-    filter: blur(0.2px);
-    -webkit-transform: translateZ(0); }
-
-.action-hover:hover {
-  color: #4CCC14; }
-
-.action-hover {
-  text-align: right; }
-
-.heading {
-  transition-duration: 0.5s;
-  filter: blur(1.5px);
-  -webkit-transform: translateZ(0);
-  width: 30%;
-  height: 300px; }
-
-a.card section {
+article {
   display: flex;
-  justify-content: space-between; }
-
-.info {
-  width: 50%; }
-
-#about .heading {
-  background-image: url("http://via.placeholder.com/350x150"); }
+  align-items: center; }

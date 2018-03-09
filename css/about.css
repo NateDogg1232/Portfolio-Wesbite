@@ -64,7 +64,9 @@ header {
   position: fixed;
   cursor: pointer;
   background-color: #f6f5f5; }
-  #hamburger #bar1, #hamburger #bar2, #hamburger #bar3 {
+  #hamburger #bar1,
+  #hamburger #bar2,
+  #hamburger #bar3 {
     width: 35px;
     height: 5px;
     background-color: #121212;
@@ -101,7 +103,8 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    color: #f6f5f5; }
+    color: #f6f5f5;
+    margin: 0; }
   #hamburger-menu a:hover {
     background-color: #efda00;
     color: #121212; }
@@ -115,15 +118,12 @@ header {
   #hamburger-menu .linkcontainer:hover {
     background-color: #efda00;
     color: #121212; }
-  #hamburger-menu .linkcontainer:hover + .hiddenlist {
-    height: inherit; }
-  #hamburger-menu .linkcontainer + .hiddenlist {
-    display: block;
-    height: 0;
+  #hamburger-menu #hiddenlist {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    transition-duration: 1s; }
+    background-color: #121212;
+    color: #f6f5f5; }
 
 #hamburger-menu.transition {
   margin-left: 0px;

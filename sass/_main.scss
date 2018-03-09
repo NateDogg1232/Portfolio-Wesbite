@@ -89,7 +89,9 @@ header {
     position: fixed;
     cursor: pointer;
     background-color: $back-color;
-    #bar1, #bar2, #bar3 {
+    #bar1,
+    #bar2,
+    #bar3 {
         width: 35px;
         height: 5px;
         background-color: $fore-color;
@@ -99,6 +101,7 @@ header {
 
     }
 }
+
 #hamburger.transition {
     left: 300px;
     #bar1 {
@@ -134,6 +137,7 @@ header {
         padding-bottom: 10px;
         text-align: center;
         color: $back-color;
+        margin: 0;
     }
     a:hover {
         background-color: $accent-color;
@@ -151,16 +155,12 @@ header {
         background-color: $accent-color;
         color: $fore-color;
     }
-    .linkcontainer:hover+.hiddenlist {
-        height: inherit;
-    }
-    .linkcontainer+.hiddenlist {
-        display: block;
-        height: 0;
+    #hiddenlist {
         margin: 0px;
         padding: 0px;
         overflow: hidden;
-        transition-duration: 1s;
+        background-color: $fore-color;
+        color: $back-color;
     }
 
 }
@@ -170,7 +170,7 @@ header {
     width: 300px;
     visibility: visible;
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
 .centertext {
     text-align: center;
 }
