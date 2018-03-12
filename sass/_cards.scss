@@ -1,0 +1,49 @@
+//Import the main SCSS file
+@import 'main';
+
+
+.card {
+    padding: 0px 20px;
+    margin: 0;
+    display: block;
+    color: $fore-color;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card:visited {
+    color: $fore-color;
+}
+
+.card:active {
+    border: none;
+}
+
+.card:hover {
+    color: $fore-color;
+}
+
+.action-hover:hover {
+    color: $action-color;
+}
+
+.action-hover {
+    text-align: right;
+}
+
+.heading {
+    transition-duration: 0.5s;
+    width: 30%;
+    height: 300px;
+}
+
+.card section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 50%;
+}
+

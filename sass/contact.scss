@@ -1,6 +1,9 @@
 //Import the main library
 @import 'main';
 
+body {
+    overflow: hidden;
+}
 
 .cardcontainer {
     overflow: hidden;
@@ -9,6 +12,8 @@
         height: 500px;
         width: 400px;
         overflow: hidden;
+        position: absolute;
+        left: 39.8%;
         .img {
             height: 300px;
             width: 100%;
@@ -32,9 +37,4 @@
             color: $fore-color;
         }
     }
-}
-
-article {
-    display: flex;
-    align-items: center;
 }

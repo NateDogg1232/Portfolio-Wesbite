@@ -41,6 +41,9 @@ h1 {
   max-width: 1500px;
   margin: auto; }
 
+.centertext {
+  text-align: center; }
+
 header {
   width: 100%;
   display: flex;
@@ -130,8 +133,8 @@ header {
   width: 300px;
   visibility: visible; }
 
-.centertext {
-  text-align: center; }
+body {
+  overflow: hidden; }
 
 .cardcontainer {
   overflow: hidden;
@@ -139,7 +142,9 @@ header {
   .cardcontainer .card {
     height: 500px;
     width: 400px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: absolute;
+    left: 39.8%; }
     .cardcontainer .card .img {
       height: 300px;
       width: 100%;
@@ -155,7 +160,3 @@ header {
       color: #121212; }
     .cardcontainer .card .link a:visited {
       color: #121212; }
-
-article {
-  display: flex;
-  align-items: center; }
