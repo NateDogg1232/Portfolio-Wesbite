@@ -39,9 +39,13 @@
         </div>
         <h1>Nathaniel Barragan</h1>
         <article>
-            <i class="leftarrow fas fa-angle-double-left" onclick="cardLeft()"></i>
+            <div class="arrows">
+                <i class="fas fa-angle-double-left" id="leftarrow" onclick="cardLeft()"></i>
+                <p class="centertext" id="cardcount">Card 1 of 6</p>
+                <i class="fas fa-angle-double-right" id="rightarrow" onclick="cardRight()"></i>
+            </div>
             <div class="cardcontainer">
-                <div class="card">
+                <div class="card center">
                     <i class="img fas fa-envelope"></i>
                     <div class="head">
                         <h3>E-Mail</h3>
@@ -50,7 +54,17 @@
                         <a href="mailto://nathanielbarragan@gmail.com">nathanielbarragan@gmail.com</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card left">
+                    <i class="img fab fa-linkedin"></i>
+                    <div class="head">
+                        <h3>Linkedin</h3>
+                    </div>
+                    <div class="link">
+                        <a href="www.linkedin.com/in/NathanielBarragan
+                            ">Linkedin</a>
+                    </div>
+                </div>
+                <div class="card left">
                     <i class="img fas fa-envelope"></i>
                     <div class="head">
                         <h3>E-Mail</h3>
@@ -59,16 +73,7 @@
                         <a href="mailto://nathanielbarragan@gmail.com">nathanielbarragan@gmail.com</a>
                     </div>
                 </div>
-                <div class="card">
-                    <i class="img fas fa-envelope"></i>
-                    <div class="head">
-                        <h3>E-Mail</h3>
-                    </div>
-                    <div class="link">
-                        <a href="mailto://nathanielbarragan@gmail.com">nathanielbarragan@gmail.com</a>
-                    </div>
-                </div>
-                <div class="card">
+                <div class="card left">
                     <i class="img fas fa-envelope"></i>
                     <div class="head">
                         <h3>E-Mail</h3>
@@ -78,7 +83,6 @@
                     </div>
                 </div>
             </div>
-            <i class="rightarrow fas fa-angle-double-right" onclick="cardRight()"></i>
         </article>
     </div>
 

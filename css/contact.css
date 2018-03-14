@@ -144,7 +144,8 @@ body {
     width: 400px;
     overflow: hidden;
     position: absolute;
-    left: 39.8%; }
+    left: 50%;
+    margin-left: -200px; }
     .cardcontainer .card .img {
       height: 300px;
       width: 100%;
@@ -160,3 +161,28 @@ body {
       color: #121212; }
     .cardcontainer .card .link a:visited {
       color: #121212; }
+
+.disabled {
+  color: gray; }
+
+.enabled {
+  color: #121212; }
+
+.arrows {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+#cardcount {
+  flex: 1; }
+
+.card.left {
+  margin-left: -2000px; }
+
+.card.right {
+  margin-left: 2000px; }
+
+.card.center {
+  margin-left: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
