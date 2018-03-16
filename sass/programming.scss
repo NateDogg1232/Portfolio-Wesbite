@@ -1,3 +1,38 @@
 @import 'main';
+@import 'cards';
 
+//Beginning of the card layouts
+#github {
+    .heading {
+        background-image: url('../img/github-icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
 
+h3 {
+    text-align: center;
+}
+.contentcontainer {
+    display: flex;
+    .screenie {
+        width: 30%;
+        min-width: 500px;
+    }
+    .writing {
+        padding-left: 30px;
+    }
+}
+
+#cos {
+    .screenie {
+        background-image: url('../img/github-icon.png');
+    }
+}
+
+#nbc {
+    .screenie {
+        background-image: url('../img/github-icon.png');
+    }
+}

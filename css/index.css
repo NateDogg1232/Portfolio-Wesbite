@@ -135,6 +135,14 @@ header {
   width: 300px;
   visibility: visible; }
 
+a {
+  color: #121212;
+  text-decoration: none;
+  transition-duration: 0.5s; }
+
+a:hover {
+  color: #4CCC14; }
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -270,6 +278,14 @@ header {
   width: 300px;
   visibility: visible; }
 
+a {
+  color: #121212;
+  text-decoration: none;
+  transition-duration: 0.5s; }
+
+a:hover {
+  color: #4CCC14; }
+
 .card {
   padding: 0px 20px;
   margin: 0;
@@ -288,11 +304,9 @@ header {
 .card:hover {
   color: #121212; }
 
-.action-hover:hover {
-  color: #4CCC14; }
-
 .action-hover {
-  text-align: right; }
+  text-align: right;
+  transition-duration: 0.5s; }
 
 .heading {
   transition-duration: 0.5s;
@@ -305,11 +319,3 @@ header {
 
 .info {
   width: 50%; }
-
-#github .heading {
-  background-image: url("../img/github-icon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-/*# sourceMappingURL=index.css.map */

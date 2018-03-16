@@ -24,12 +24,9 @@
     color: $fore-color;
 }
 
-.action-hover:hover {
-    color: $action-color;
-}
-
 .action-hover {
     text-align: right;
+    transition-duration: 0.5s;
 }
 
 .heading {

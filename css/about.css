@@ -134,6 +134,14 @@ header {
   width: 300px;
   visibility: visible; }
 
+a {
+  color: #121212;
+  text-decoration: none;
+  transition-duration: 0.5s; }
+
+a:hover {
+  color: #4CCC14; }
+
 article {
   display: flex;
   justify-content: space-around;
@@ -149,5 +157,3 @@ div.image {
 div.about {
   width: 79%;
   padding-left: 10%; }
-
-/*# sourceMappingURL=about.css.map */

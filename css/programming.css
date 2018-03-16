@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 body {
   box-sizing: border-box;
   margin: 0;
@@ -134,4 +135,210 @@ header {
   width: 300px;
   visibility: visible; }
 
-/*# sourceMappingURL=programming.css.map */
+a {
+  color: #121212;
+  text-decoration: none;
+  transition-duration: 0.5s; }
+
+a:hover {
+  color: #4CCC14; }
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #f6f5f5;
+  color: #121212; }
+
+.horizrule {
+  padding-top: 20px;
+  margin: auto;
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .horizrule hr {
+    display: inline-block;
+    border-color: #121212;
+    width: 49%;
+    height: 0px; }
+  .horizrule .circle {
+    display: inline-block;
+    border: 5px solid #efda00;
+    border-radius: 50%;
+    width: 30px;
+    min-width: 30px !important;
+    height: 30px; }
+  .horizrule a {
+    padding: 0;
+    margin: 0;
+    display: block;
+    height: 45px;
+    width: 45px; }
+
+h1 {
+  display: block;
+  text-align: center; }
+
+.pagewrap {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0px 5%; }
+
+.centertext {
+  text-align: center; }
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+#hamburger {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  transition-duration: 1s; }
+  #hamburger img {
+    display: block;
+    padding: 0px;
+    margin: 0px; }
+
+#hamburger {
+  display: inline-block;
+  position: fixed;
+  cursor: pointer;
+  background-color: #f6f5f5; }
+  #hamburger #bar1,
+  #hamburger #bar2,
+  #hamburger #bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #121212;
+    margin: 6px 0;
+    transition: 1s;
+    border-radius: 0px; }
+
+#hamburger.transition {
+  left: 300px; }
+  #hamburger.transition #bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  #hamburger.transition #bar2 {
+    opacity: 0; }
+  #hamburger.transition #bar3 {
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+#hamburger-menu {
+  position: fixed;
+  height: 100vh;
+  margin-left: -100px;
+  visibility: hidden;
+  width: 100px;
+  transition-duration: 1s;
+  background-color: #121212;
+  opacity: 0.95;
+  z-index: 100000000000000; }
+  #hamburger-menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+  #hamburger-menu a {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #f6f5f5;
+    margin: 0; }
+  #hamburger-menu a:hover {
+    background-color: #efda00;
+    color: #121212; }
+  #hamburger-menu .linkcontainer {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #f6f5f5; }
+  #hamburger-menu .linkcontainer:hover {
+    background-color: #efda00;
+    color: #121212; }
+  #hamburger-menu #hiddenlist {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #121212;
+    color: #f6f5f5; }
+
+#hamburger-menu.transition {
+  margin-left: 0px;
+  width: 300px;
+  visibility: visible; }
+
+a {
+  color: #121212;
+  text-decoration: none;
+  transition-duration: 0.5s; }
+
+a:hover {
+  color: #4CCC14; }
+
+.card {
+  padding: 0px 20px;
+  margin: 0;
+  display: block;
+  color: #121212;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 20px; }
+
+.card:visited {
+  color: #121212; }
+
+.card:active {
+  border: none; }
+
+.card:hover {
+  color: #121212; }
+
+.action-hover {
+  text-align: right;
+  transition-duration: 0.5s; }
+
+.heading {
+  transition-duration: 0.5s;
+  width: 30%;
+  height: 300px; }
+
+.card section {
+  display: flex;
+  justify-content: space-between; }
+
+.info {
+  width: 50%; }
+
+#github .heading {
+  background-image: url("../img/github-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+h3 {
+  text-align: center; }
+
+.contentcontainer {
+  display: flex; }
+  .contentcontainer .screenie {
+    width: 30%;
+    min-width: 500px; }
+  .contentcontainer .writing {
+    padding-left: 30px; }
+
+#cos .screenie {
+  background-image: url("../img/github-icon.png"); }
+
+#nbc .screenie {
+  background-image: url("../img/github-icon.png"); }

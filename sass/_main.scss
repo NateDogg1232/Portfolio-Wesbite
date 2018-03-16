@@ -174,3 +174,12 @@ header {
     width: 300px;
     visibility: visible;
 }
+
+a {
+    color: $fore-color;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+a:hover {
+    color: $action-color;
+}

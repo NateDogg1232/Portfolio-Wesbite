@@ -142,56 +142,38 @@ a {
 a:hover {
   color: #4CCC14; }
 
-body {
-  overflow: hidden; }
-
-.cardcontainer {
-  overflow: hidden;
-  width: 100%; }
-  .cardcontainer .card {
-    height: 500px;
-    width: 400px;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    margin-left: -200px; }
-    .cardcontainer .card .img {
-      height: 300px;
-      width: 100%;
-      color: #121212; }
-    .cardcontainer .card .head {
-      text-align: center; }
-    .cardcontainer .card .link a:hover {
-      color: #4CCC14; }
-    .cardcontainer .card .link {
-      text-align: center; }
-    .cardcontainer .card .link a {
-      text-align: center;
-      color: #121212; }
-    .cardcontainer .card .link a:visited {
-      color: #121212; }
-
-.disabled {
-  color: gray; }
-
-.enabled {
-  color: #121212; }
-
-.arrows {
-  width: 100%;
+.card {
   display: flex;
-  justify-content: center; }
+  align-content: center;
+  margin-bottom: 50px;
+  height: 200px; }
+  .card .thumbnail {
+    width: 19%;
+    background-image: url(http://via.placeholder.com/350x350);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .card .player {
+    width: 60%;
+    padding: 0 20px; }
+    .card .player audio {
+      margin: auto;
+      display: block;
+      width: 100%;
+      color: #f6f5f5; }
+  .card .info {
+    width: 19%; }
 
-#cardcount {
-  flex: 1; }
+.intro {
+  margin-bottom: 50px; }
 
-.card.left {
-  margin-left: -2000px; }
+#this .thumbnail {
+  background-image: url(../img/this-is-it-thumbnail.jpg); }
 
-.card.right {
-  margin-left: 2000px; }
+#fight .thumbnail {
+  background-image: url(../img/fight-of-the-century-thumbnail.jpg); }
 
-.card.center {
-  margin-left: 0px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%); }
+#hell .thumbnail {
+  background-image: url(../img/hells-gate-thumbnail.jpg); }
+
+#walk .thumbnail {
+  background-image: url(../img/walk-through-dark-forest-thumbnail.jpg); }
