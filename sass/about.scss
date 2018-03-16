@@ -1,3 +1,24 @@
 //Import the main SCSS file
 
 @import 'main';
+
+
+article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+}
+
+div.image {
+    background-image: url(../img/mybody.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+
+div.about {
+    width: 79%;
+    padding-left: 10%;
+}

@@ -39,7 +39,8 @@ h1 {
 
 .pagewrap {
   max-width: 1500px;
-  margin: auto; }
+  margin: auto;
+  padding: 0px 5%; }
 
 .centertext {
   text-align: center; }
@@ -132,3 +133,21 @@ header {
   margin-left: 0px;
   width: 300px;
   visibility: visible; }
+
+article {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap; }
+
+div.image {
+  background-image: url(../img/mybody.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20%; }
+
+div.about {
+  width: 79%;
+  padding-left: 10%; }
+
+/*# sourceMappingURL=about.css.map */

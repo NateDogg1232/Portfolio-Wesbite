@@ -40,7 +40,8 @@ h1 {
 
 .pagewrap {
   max-width: 1500px;
-  margin: auto; }
+  margin: auto;
+  padding: 0px 5%; }
 
 .centertext {
   text-align: center; }
@@ -174,7 +175,8 @@ h1 {
 
 .pagewrap {
   max-width: 1500px;
-  margin: auto; }
+  margin: auto;
+  padding: 0px 5%; }
 
 .centertext {
   text-align: center; }
@@ -309,3 +311,5 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
+
+/*# sourceMappingURL=index.css.map */

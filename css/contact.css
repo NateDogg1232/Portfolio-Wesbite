@@ -39,7 +39,8 @@ h1 {
 
 .pagewrap {
   max-width: 1500px;
-  margin: auto; }
+  margin: auto;
+  padding: 0px 5%; }
 
 .centertext {
   text-align: center; }
@@ -186,3 +187,5 @@ body {
   margin-left: 0px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+/*# sourceMappingURL=contact.css.map */

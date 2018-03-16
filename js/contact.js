@@ -15,8 +15,12 @@ updateCardCount();
 function cardLeft() {
     currentCard--;
     if (currentCard <= 0) {
+        document.getElementById("leftarrow").classList.remove("enabled");
         document.getElementById("leftarrow").classList.add("disabled");
-        currentCard = 0;
+        if (currentCard < 0) {
+            currentCard = 0;
+            return;
+        }
     }
     document.getElementById("rightarrow").classList.add("enabled");
     cards[currentCard].classList.add("center");
@@ -29,8 +33,12 @@ function cardLeft() {
 function cardRight() {
     currentCard++;
     if (currentCard >= cardMax) {
+        document.getElementById("rightarrow").classList.remove("enabled");
         document.getElementById("rightarrow").classList.add("disabled");
-        currentCard = cardMax;
+        if (currentCard > cardMax) {
+            currentCard = cardMax;
+            return;
+        }
     }
     document.getElementById("leftarrow").classList.add("enabled");
     cards[currentCard].classList.add("center");
@@ -43,4 +51,3 @@ function cardRight() {
 function updateCardCount() {
     document.getElementById("cardcount").innerHTML = "Card " + (currentCard + 1) + " of " + (cardMax + 1);
 }
-
