@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-size: 20px;
   font-family: 'Roboto Mono', monospace;
-  background-color: #f6f5f5;
+  background-color: #f5f5f5;
   color: #121212; }
 
 .horizrule {
@@ -67,7 +67,7 @@ header {
   display: inline-block;
   position: fixed;
   cursor: pointer;
-  background-color: #f6f5f5; }
+  background-color: #f5f5f5; }
   #hamburger #bar1,
   #hamburger #bar2,
   #hamburger #bar3 {
@@ -107,7 +107,7 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    color: #f6f5f5;
+    color: #f5f5f5;
     margin: 0; }
   #hamburger-menu a:hover {
     background-color: #efda00;
@@ -118,7 +118,7 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    color: #f6f5f5; }
+    color: #f5f5f5; }
   #hamburger-menu .linkcontainer:hover {
     background-color: #efda00;
     color: #121212; }
@@ -127,7 +127,7 @@ header {
     padding: 0px;
     overflow: hidden;
     background-color: #121212;
-    color: #f6f5f5; }
+    color: #f5f5f5; }
 
 #hamburger-menu.transition {
   margin-left: 0px;
@@ -149,27 +149,39 @@ body {
   overflow: hidden;
   width: 100%; }
   .cardcontainer .card {
+    display: block;
     height: 500px;
     width: 400px;
     overflow: hidden;
     position: absolute;
     left: 50%;
-    margin-left: -200px; }
+    margin-left: -200px;
+    transition-duration: 1s;
+    transition-timing-function: ease; }
     .cardcontainer .card .img {
+      display: inline-block;
       height: 300px;
-      width: 100%;
-      color: #121212; }
+      width: 90%;
+      color: #121212;
+      transition-duration: 1s;
+      margin-left: 5%; }
     .cardcontainer .card .head {
       text-align: center; }
-    .cardcontainer .card .link a:hover {
+    .cardcontainer .card .link p:hover {
       color: #4CCC14; }
     .cardcontainer .card .link {
       text-align: center; }
-    .cardcontainer .card .link a {
+    .cardcontainer .card .link p {
       text-align: center;
       color: #121212; }
-    .cardcontainer .card .link a:visited {
-      color: #121212; }
+  .cardcontainer x
+.card:hover {
+    cursor: pointer; }
+    .cardcontainer x
+.card:hover .img {
+      height: 320px;
+      width: 100%;
+      margin-left: 0; }
 
 .disabled {
   color: gray; }
@@ -186,12 +198,11 @@ body {
   flex: 1; }
 
 .card.left {
-  margin-left: -2000px; }
+  margin-left: -4000px; }
 
 .card.right {
-  margin-left: 2000px; }
+  margin-left: 4000px; }
 
 .card.center {
   margin-left: 0px;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }

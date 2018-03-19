@@ -9,33 +9,45 @@ body {
     overflow: hidden;
     width: 100%;
     .card {
+        display: block;
         height: 500px;
         width: 400px;
         overflow: hidden;
         position: absolute;
         left: 50%;
         margin-left: -200px;
+        transition-duration: 1s;
+        transition-timing-function:ease;
         .img {
+            display: inline-block;
             height: 300px;
-            width: 100%;
+            width: 90%;
             color: $fore-color;
+            transition-duration: 1s;
+            margin-left: 5%;
         }
         .head {
             text-align: center;
         }
         //link
-        .link a:hover {
+        .link p:hover {
             color: $action-color;
         }
         .link {
             text-align: center;
         }
-        .link a {
+        .link p {
             text-align: center;
             color: $fore-color;
         }
-        .link a:visited {
-            color: $fore-color;
+    }x
+
+    .card:hover {
+        cursor: pointer;
+        .img {
+            height: 320px;
+            width: 100%;
+            margin-left: 0;
         }
     }
 }
@@ -57,13 +69,12 @@ body {
 }
 
 .card.left {
-    margin-left: -2000px;
+    margin-left: -4000px;
 }
 .card.right {
-    margin-left: 2000px;
+    margin-left: 4000px;
 }
 .card.center {
     margin-left: 0px;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }

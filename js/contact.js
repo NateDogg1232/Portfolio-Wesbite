@@ -1,16 +1,16 @@
+
 var cards = document.getElementsByClassName("card");
 const cardMax = cards.length - 1;
 var cardTop = cards[0].getBoundingClientRect().top;
 var currentCard = 0;
 
 //Initialize all the cards
-for (let i = 0; i <= cardMax; i++) {
+for (let i = 0; i <= cardMax; i++)
     cards[i].style.top = cardTop;
-    cards[i].style.transitionDuration = "1s";
-}
 
 updateCardCount();
 
+document.onkeydown = keyPressed;
 
 function cardLeft() {
     currentCard--;
@@ -50,4 +50,11 @@ function cardRight() {
 
 function updateCardCount() {
     document.getElementById("cardcount").innerHTML = "Card " + (currentCard + 1) + " of " + (cardMax + 1);
+}
+
+function keyPressed(e) {
+    if (e.key == "ArrowLeft")
+        cardLeft();
+    if (e.key == "ArrowRight")
+        cardRight();
 }

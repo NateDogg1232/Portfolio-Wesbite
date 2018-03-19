@@ -145,35 +145,15 @@ a:hover {
 .card {
   display: flex;
   align-content: center;
-  margin-bottom: 50px;
-  height: 200px; }
+  margin-bottom: 50px; }
   .card .thumbnail {
     width: 19%;
     background-image: url(http://via.placeholder.com/350x350);
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .card .player {
-    width: 60%;
-    padding: 0 20px; }
-    .card .player audio {
-      margin: auto;
-      display: block;
-      width: 100%;
-      color: #f5f5f5; }
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px; }
   .card .info {
-    width: 19%; }
+    width: 70%; }
 
-.intro {
-  margin-bottom: 50px; }
-
-#this .thumbnail {
-  background-image: url(../img/this-is-it-thumbnail.jpg); }
-
-#fight .thumbnail {
-  background-image: url(../img/fight-of-the-century-thumbnail.jpg); }
-
-#hell .thumbnail {
-  background-image: url(../img/hells-gate-thumbnail.jpg); }
-
-#walk .thumbnail {
-  background-image: url(../img/walk-through-dark-forest-thumbnail.jpg); }
+#cart .thumbnail {
+  background-image: url(../img/cart-logo.png); }
