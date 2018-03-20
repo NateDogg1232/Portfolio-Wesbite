@@ -174,11 +174,9 @@ body {
     .cardcontainer .card .link p {
       text-align: center;
       color: #121212; }
-  .cardcontainer x
-.card:hover {
+  .cardcontainer .card:hover {
     cursor: pointer; }
-    .cardcontainer x
-.card:hover .img {
+    .cardcontainer .card:hover .img {
       height: 320px;
       width: 100%;
       margin-left: 0; }

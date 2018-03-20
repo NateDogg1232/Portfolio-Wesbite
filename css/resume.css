@@ -142,18 +142,5 @@ a {
 a:hover {
   color: #4CCC14; }
 
-.card {
-  display: flex;
-  align-content: center;
-  margin-bottom: 50px; }
-  .card .thumbnail {
-    width: 19%;
-    background-image: url(http://via.placeholder.com/350x350);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px; }
-  .card .info {
-    width: 70%; }
-
-#cart .thumbnail {
+#cart .img {
   background-image: url(../img/cart-logo.png); }

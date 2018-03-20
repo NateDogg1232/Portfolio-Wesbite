@@ -1,24 +1,12 @@
 @import 'main';
 
-.card {
-    display: flex;
-    align-content: center;
-    .thumbnail {
-        width: 19%;
-        background-image: url(http://via.placeholder.com/350x350);
-        background-size: contain;
-        background-repeat: no-repeat;
-		height: 300px;
+section.card {
+    section {
+        
     }
-    .info {
-        width: 70%;
-    }
-    margin-bottom: 50px;
 }
-
-
 #cart {
-	.thumbnail {
+	.img {
 		background-image: url(../img/cart-logo.png);
 	}
 }
