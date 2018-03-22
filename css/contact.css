@@ -156,15 +156,12 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -200px;
-    transition-duration: 1s;
     transition-timing-function: ease; }
     .cardcontainer .card .img {
       display: inline-block;
       height: 300px;
-      width: 90%;
-      color: #121212;
-      transition-duration: 1s;
-      margin-left: 5%; }
+      width: 100%;
+      color: #121212; }
     .cardcontainer .card .head {
       text-align: center; }
     .cardcontainer .card .link p:hover {
@@ -174,18 +171,6 @@ body {
     .cardcontainer .card .link p {
       text-align: center;
       color: #121212; }
-  .cardcontainer .card:hover {
-    cursor: pointer; }
-    .cardcontainer .card:hover .img {
-      height: 320px;
-      width: 100%;
-      margin-left: 0; }
-
-.disabled {
-  color: gray; }
-
-.enabled {
-  color: #121212; }
 
 .arrows {
   width: 100%;

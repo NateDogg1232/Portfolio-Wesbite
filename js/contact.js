@@ -2,50 +2,81 @@
 var cards = document.getElementsByClassName("card");
 const cardMax = cards.length - 1;
 var cardTop = cards[0].getBoundingClientRect().top;
-var currentCard = 0;
+var currentCard = 1;
 
 //Initialize all the cards
-for (let i = 0; i <= cardMax; i++)
+for (let i = 0; i <= cardMax; i++) {
     cards[i].style.top = cardTop;
+    //cards[i].style.transitionDuration = "0s";
+}
 
 updateCardCount();
 
 document.onkeydown = keyPressed;
 
-function cardLeft() {
-    currentCard--;
-    if (currentCard <= 0) {
-        document.getElementById("leftarrow").classList.remove("enabled");
-        document.getElementById("leftarrow").classList.add("disabled");
-        if (currentCard < 0) {
-            currentCard = 0;
-            return;
-        }
+function cardRight() {
+    previousCard().style.transitionDuration = "0s";
+    previousCard().classList.remove("right");
+    previousCard().classList.remove("center");
+    previousCard().classList.add("left");
+    currentCard++;
+    if (currentCard > cardMax) {
+        currentCard = 0;
     }
-    document.getElementById("rightarrow").classList.add("enabled");
-    cards[currentCard].classList.add("center");
+    cards[currentCard].style.transitionDuration = "2s";
+    cards[currentCard].classList.remove("left");
     cards[currentCard].classList.remove("right");
-    cards[currentCard + 1].classList.add("left");
-    cards[currentCard + 1].classList.remove("center");
+    cards[currentCard].classList.add("center");
+    previousCard().style.transitionDuration = "2s";
+    previousCard().classList.remove("center");
+    previousCard().classList.remove("left");
+    previousCard().classList.add("right");
+
     updateCardCount();
 }
 
-function cardRight() {
-    currentCard++;
-    if (currentCard >= cardMax) {
-        document.getElementById("rightarrow").classList.remove("enabled");
-        document.getElementById("rightarrow").classList.add("disabled");
-        if (currentCard > cardMax) {
-            currentCard = cardMax;
-            return;
-        }
+function cardLeft() {
+    nextCard().style.transitionDuration = "0s";
+    nextCard().classList.remove("left");
+    nextCard().classList.remove("center");
+    nextCard().classList.add("right");
+    currentCard--;
+    if (currentCard < 0) {
+        currentCard = 0;
     }
-    document.getElementById("leftarrow").classList.add("enabled");
-    cards[currentCard].classList.add("center");
+    cards[currentCard].style.transitionDuration = "2s";
     cards[currentCard].classList.remove("left");
-    cards[currentCard - 1].classList.add("right");
-    cards[currentCard - 1].classList.remove("center");
+    cards[currentCard].classList.remove("right");
+    cards[currentCard].classList.add("center");
+    nextCard().style.transitionDuration = "2s";
+    nextCard().classList.remove("center");
+    nextCard().classList.remove("right");
+    nextCard().classList.add("left");
+
     updateCardCount();
+}
+
+function updateCards() {
+    
+}
+
+function nextCard() {
+    if (currentCard >= cardMax) {
+        return cards[0];
+    }
+    console.log("Current Card: " + (currentCard + 1));
+    console.log("Card Max : " + cardMax);
+    return cards[currentCard + 1];
+}
+
+function previousCard() {
+    if (currentCard <= 0) {
+        console.log("returning 0");
+        return cards[cardMax];
+    }
+    console.log("Current Card: " + (currentCard + 1));
+    console.log("Card Max : " + cardMax);
+    return cards[currentCard - 1];
 }
 
 function updateCardCount() {

@@ -1,8 +1,12 @@
 @import 'main';
 
-section.card {
+div.content {
+    display: flex;
+    .img {
+        width: 30%;
+    }
     section {
-        
+        width: 69%;
     }
 }
 #cart {

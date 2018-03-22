@@ -16,15 +16,12 @@ body {
         position: absolute;
         left: 50%;
         margin-left: -200px;
-        transition-duration: 1s;
         transition-timing-function:ease;
         .img {
             display: inline-block;
             height: 300px;
-            width: 90%;
+            width: 100%;
             color: $fore-color;
-            transition-duration: 1s;
-            margin-left: 5%;
         }
         .head {
             text-align: center;
@@ -42,21 +39,6 @@ body {
         }
     }
 
-    .card:hover {
-        cursor: pointer;
-        .img {
-            height: 320px;
-            width: 100%;
-            margin-left: 0;
-        }
-    }
-}
-
-.disabled {
-    color: gray;
-}
-.enabled {
-    color: $fore-color;
 }
 
 .arrows {

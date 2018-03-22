@@ -142,5 +142,12 @@ a {
 a:hover {
   color: #4CCC14; }
 
+div.content {
+  display: flex; }
+  div.content .img {
+    width: 30%; }
+  div.content section {
+    width: 69%; }
+
 #cart .img {
   background-image: url(../img/cart-logo.png); }
