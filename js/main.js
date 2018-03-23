@@ -36,3 +36,7 @@ function subMenuClose() {
     //Set the height of the menu to 0
     subMenu.style.height = "0px";
 }
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

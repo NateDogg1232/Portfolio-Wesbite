@@ -2,7 +2,7 @@
 var cards = document.getElementsByClassName("card");
 const cardMax = cards.length - 1;
 var cardTop = cards[0].getBoundingClientRect().top;
-var currentCard = 1;
+var currentCard = 0;
 
 //Initialize all the cards
 for (let i = 0; i <= cardMax; i++) {
@@ -15,67 +15,84 @@ updateCardCount();
 document.onkeydown = keyPressed;
 
 function cardRight() {
-    previousCard().style.transitionDuration = "0s";
-    previousCard().classList.remove("right");
-    previousCard().classList.remove("center");
-    previousCard().classList.add("left");
+    //We first need to update all the cards to reset all of them.
+    updateCards();
+    //First, we move the current card to the right side
+    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
+    setRight(cards[currentCard]);
+    //And we increment the current card
     currentCard++;
-    if (currentCard > cardMax) {
+    if (currentCard > cardMax)
         currentCard = 0;
-    }
-    cards[currentCard].style.transitionDuration = "2s";
-    cards[currentCard].classList.remove("left");
-    cards[currentCard].classList.remove("right");
-    cards[currentCard].classList.add("center");
-    previousCard().style.transitionDuration = "2s";
-    previousCard().classList.remove("center");
-    previousCard().classList.remove("left");
-    previousCard().classList.add("right");
-
+    //And now we move the current card to the middle.
+    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
+    setCenter(cards[currentCard]);
     updateCardCount();
 }
 
-function cardLeft() {
-    nextCard().style.transitionDuration = "0s";
-    nextCard().classList.remove("left");
-    nextCard().classList.remove("center");
-    nextCard().classList.add("right");
+//This needs to be asynchronous so that we can use the sleep function;
+async function cardLeft() {
+    //We first need to update all the cards to reset all of them.
+    updateCards();
+    //Then we need to move the next card in queue to the right side.
+    previousCard().style.transitionDuration = "0s"; //Hide the transition
+    setRight(previousCard());
+    await sleep(5);
+
+    //We set the current card to the left side
+    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
+    setLeft(cards[currentCard]);
+    //And now we move the next card over to the center
+    //We decrement the counter for the current card
     currentCard--;
-    if (currentCard < 0) {
-        currentCard = 0;
-    }
-    cards[currentCard].style.transitionDuration = "2s";
-    cards[currentCard].classList.remove("left");
-    cards[currentCard].classList.remove("right");
-    cards[currentCard].classList.add("center");
-    nextCard().style.transitionDuration = "2s";
-    nextCard().classList.remove("center");
-    nextCard().classList.remove("right");
-    nextCard().classList.add("left");
-
+    if (currentCard < 0)
+        currentCard = cardMax;
+    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
+    setCenter(cards[currentCard]);
     updateCardCount();
 }
 
+function setCenter(element) {
+    element.classList.remove("left");
+    element.classList.remove("right");
+    element.classList.add("center");
+}
+
+function setLeft(element) {
+    element.classList.remove("right");
+    element.classList.remove("center");
+    element.classList.add("left");
+}
+
+function setRight(element) {
+    element.classList.remove("left");
+    element.classList.remove("center");
+    element.classList.add("right");
+}
+
+
+//Reset all the cards
 function updateCards() {
-    
+    for (let i = 0; i <= cardMax; i++) {
+        if (i == currentCard) {
+            continue;
+        }
+        cards[i].style.transitionDuration = "0s"; //Hide the transition
+        setLeft(cards[i]);
+    }
 }
 
 function nextCard() {
     if (currentCard >= cardMax) {
         return cards[0];
     }
-    console.log("Current Card: " + (currentCard + 1));
-    console.log("Card Max : " + cardMax);
     return cards[currentCard + 1];
 }
 
 function previousCard() {
     if (currentCard <= 0) {
-        console.log("returning 0");
         return cards[cardMax];
     }
-    console.log("Current Card: " + (currentCard + 1));
-    console.log("Card Max : " + cardMax);
     return cards[currentCard - 1];
 }
 
