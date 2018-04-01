@@ -37,6 +37,8 @@ async function cardLeft() {
     //Then we need to move the next card in queue to the right side.
     previousCard().style.transitionDuration = "0s"; //Hide the transition
     setRight(previousCard());
+    //We wait for 5 milliseconds just to make sure that the animations occur
+    //before we continue with the function
     await sleep(5);
 
     //We set the current card to the left side
