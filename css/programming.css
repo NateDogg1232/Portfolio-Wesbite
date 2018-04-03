@@ -326,8 +326,17 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center; }
 
+#github p {
+  text-indent: 0px; }
+
 h3 {
   text-align: center; }
+
+p {
+  text-indent: 2em; }
+
+article {
+  margin-bottom: 100px; }
 
 .contentcontainer {
   display: flex; }
@@ -337,10 +346,15 @@ h3 {
   .contentcontainer .writing {
     padding-left: 30px; }
 
+.tools .content {
+  display: flex; }
+  .tools .content p {
+    display: block;
+    width: 30%; }
+
 #cos .screenie {
   background-image: url("../img/cos-code.png"); }
 
-#nbc .screenie {
-  background-image: url("../img/github-icon.png"); }
-
-/*# sourceMappingURL=programming.css.map */
+#amurtiger .screenie {
+  background-size: cover;
+  background-image: url("../img/siberiantiger.png"); }

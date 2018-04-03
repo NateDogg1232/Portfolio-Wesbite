@@ -14,7 +14,7 @@ updateCardCount();
 
 document.onkeydown = keyPressed;
 
-function cardRight() {
+async function cardRight() {
     //We first need to update all the cards to reset all of them.
     updateCards();
     //First, we move the current card to the right side
@@ -39,7 +39,7 @@ async function cardLeft() {
     setRight(previousCard());
     //We wait for 5 milliseconds just to make sure that the animations occur
     //before we continue with the function
-    await sleep(5);
+    await sleep(1   );
 
     //We set the current card to the left side
     cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows

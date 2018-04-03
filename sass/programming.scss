@@ -9,11 +9,23 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    p {
+        text-indent: 0px;
+    }
 }
 
 h3 {
     text-align: center;
 }
+
+p {
+    text-indent: 2em;
+}
+
+article {
+    margin-bottom: 100px;
+}
+
 .contentcontainer {
     display: flex;
     .screenie {
@@ -25,14 +37,26 @@ h3 {
     }
 }
 
+.tools .content {
+    display: flex;
+    p {
+        display: block;
+        width: 30%;
+    }
+    ul {
+
+    }
+}
+
 #cos {
     .screenie {
         background-image: url('../img/cos-code.png');
     }
 }
 
-#nbc {
+#amurtiger {
     .screenie {
-        background-image: url('../img/github-icon.png');
+        background-size: cover;
+        background-image: url('../img/siberiantiger.png');
     }
 }
