@@ -10,13 +10,17 @@ for (let i = 0; i <= cardMax; i++) {
     //cards[i].style.transitionDuration = "0s";
 }
 
-updateCardCount();
+// var inputs = document.getElementsByTagName("input");
+// for (i=0; i<inputs.length; i++){
+//    inputs[i].onchange = checkForm();
+// }
 
-document.onkeydown = keyPressed;
+
+updateCardCount();
 
 async function cardRight() {
     //We first need to update all the cards to reset all of them.
-    updateCards();
+    await updateCards();
     //First, we move the current card to the right side
     cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
     setRight(cards[currentCard]);
@@ -33,13 +37,13 @@ async function cardRight() {
 //This needs to be asynchronous so that we can use the sleep function;
 async function cardLeft() {
     //We first need to update all the cards to reset all of them.
-    updateCards();
+    await updateCards();
     //Then we need to move the next card in queue to the right side.
     previousCard().style.transitionDuration = "0s"; //Hide the transition
     setRight(previousCard());
-    //We wait for 5 milliseconds just to make sure that the animations occur
+    //We wait for 1 millisecond just to make sure that the animations occur
     //before we continue with the function
-    await sleep(1   );
+    await sleep(1);
 
     //We set the current card to the left side
     cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
@@ -75,13 +79,17 @@ function setRight(element) {
 
 //Reset all the cards
 function updateCards() {
-    for (let i = 0; i <= cardMax; i++) {
-        if (i == currentCard) {
-            continue;
+    //We use promises to make sure that this happens.
+    return new Promise(function (resolve) {
+        for (let i = 0; i <= cardMax; i++) {
+            if (i == currentCard) {
+                continue;
+            }
+            cards[i].style.transitionDuration = "0s"; //Hide the transition
+            setLeft(cards[i]);
         }
-        cards[i].style.transitionDuration = "0s"; //Hide the transition
-        setLeft(cards[i]);
-    }
+        resolve();
+    });
 }
 
 function nextCard() {
@@ -100,11 +108,4 @@ function previousCard() {
 
 function updateCardCount() {
     document.getElementById("cardcount").innerHTML = "Card " + (currentCard + 1) + " of " + (cardMax + 1);
-}
-
-function keyPressed(e) {
-    if (e.key == "ArrowLeft")
-        cardLeft();
-    if (e.key == "ArrowRight")
-        cardRight();
 }

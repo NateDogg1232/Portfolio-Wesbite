@@ -1,12 +1,46 @@
 //Import the main library
 @import 'main';
-
+$error-color: #D64B42;
 body {
     overflow: hidden;
 }
 
+div.contact {
+    display: flex;
+    p {
+        width: 30%;
+    }
+    form {
+        :focus {
+            outline-color: $action-color;
+        }
+        width: 70%;
+        display: flex;
+        //flex-direction: column;
+        flex-wrap: nowrap;
+        input, label {
+            display: block;
+            width: 50%;
+            margin: 0;
+        }
+        :invalid {
+            outline-color: $error-color;
+        }
+        textarea {
+            resize: vertical;
+        }
+        div {
+            width: 49%;
+        }
+    }
+}
+
+#out {
+    color: $error-color;
+}
+
 .cardcontainer {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
     .card {
         display: block;

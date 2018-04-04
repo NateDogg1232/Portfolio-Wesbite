@@ -145,8 +145,32 @@ a:hover {
 body {
   overflow: hidden; }
 
+div.contact {
+  display: flex; }
+  div.contact p {
+    width: 30%; }
+  div.contact form {
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap; }
+    div.contact form :focus {
+      outline-color: #4CCC14; }
+    div.contact form input, div.contact form label {
+      display: block;
+      width: 50%;
+      margin: 0; }
+    div.contact form :invalid {
+      outline-color: #D64B42; }
+    div.contact form textarea {
+      resize: vertical; }
+    div.contact form div {
+      width: 49%; }
+
+#out {
+  color: #D64B42; }
+
 .cardcontainer {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%; }
   .cardcontainer .card {
     display: block;
