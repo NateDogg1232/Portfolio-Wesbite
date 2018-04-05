@@ -40,3 +40,8 @@ function subMenuClose() {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
+function dothing() {
+    alert("i see you're snooping around...");
+}

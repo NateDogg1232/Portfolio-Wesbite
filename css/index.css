@@ -67,8 +67,7 @@ header {
 #hamburger {
   display: inline-block;
   position: fixed;
-  cursor: pointer;
-  background-color: #f5f5f5; }
+  cursor: pointer; }
   #hamburger #bar1,
   #hamburger #bar2,
   #hamburger #bar3 {
@@ -80,7 +79,7 @@ header {
     border-radius: 0px; }
 
 #hamburger.transition {
-  left: 300px; }
+  left: 200px; }
   #hamburger.transition #bar1 {
     transform: rotate(-45deg) translate(-9px, 6px); }
   #hamburger.transition #bar2 {
@@ -132,7 +131,7 @@ header {
 
 #hamburger-menu.transition {
   margin-left: 0px;
-  width: 300px;
+  width: 200px;
   visibility: visible; }
 
 a {
@@ -210,8 +209,7 @@ header {
 #hamburger {
   display: inline-block;
   position: fixed;
-  cursor: pointer;
-  background-color: #f5f5f5; }
+  cursor: pointer; }
   #hamburger #bar1,
   #hamburger #bar2,
   #hamburger #bar3 {
@@ -223,7 +221,7 @@ header {
     border-radius: 0px; }
 
 #hamburger.transition {
-  left: 300px; }
+  left: 200px; }
   #hamburger.transition #bar1 {
     transform: rotate(-45deg) translate(-9px, 6px); }
   #hamburger.transition #bar2 {
@@ -275,7 +273,7 @@ header {
 
 #hamburger-menu.transition {
   margin-left: 0px;
-  width: 300px;
+  width: 200px;
   visibility: visible; }
 
 a {
@@ -293,7 +291,7 @@ a:hover {
   color: #121212;
   text-decoration: none;
   text-align: left;
-  margin-bottom: 20px; }
+  margin-bottom: 50px; }
 
 .card:visited {
   color: #121212; }
@@ -312,10 +310,47 @@ a:hover {
   transition-duration: 0.5s;
   width: 30%;
   height: 300px; }
+  .heading .header {
+    width: 100%; }
 
 .card section {
   display: flex;
   justify-content: space-between; }
 
 .info {
-  width: 50%; }
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#about .heading {
+  background-image: url(../img/myface.jpg);
+  background-size: cover;
+  background-position: center; }
+
+#resume .heading {
+  background-image: url(../img/resume.jpg);
+  background-size: auto;
+  background-position: left; }
+
+#programming .heading {
+  background-image: url(../img/cos-code.png); }
+
+#music .heading {
+  background-image: url(../img/music.jpg); }
+
+.card .heading {
+  background-repeat: no-repeat;
+  color: #f5f5f5; }
+  .card .heading h3 {
+    transition-duration: 1s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+
+.card:hover .heading h3 {
+  background-color: rgba(0, 0, 0, 0.8); }

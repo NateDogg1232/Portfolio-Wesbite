@@ -66,8 +66,7 @@ header {
 #hamburger {
   display: inline-block;
   position: fixed;
-  cursor: pointer;
-  background-color: #f5f5f5; }
+  cursor: pointer; }
   #hamburger #bar1,
   #hamburger #bar2,
   #hamburger #bar3 {
@@ -79,7 +78,7 @@ header {
     border-radius: 0px; }
 
 #hamburger.transition {
-  left: 300px; }
+  left: 200px; }
   #hamburger.transition #bar1 {
     transform: rotate(-45deg) translate(-9px, 6px); }
   #hamburger.transition #bar2 {
@@ -131,7 +130,7 @@ header {
 
 #hamburger-menu.transition {
   margin-left: 0px;
-  width: 300px;
+  width: 200px;
   visibility: visible; }
 
 a {

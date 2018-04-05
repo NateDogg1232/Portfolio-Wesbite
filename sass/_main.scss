@@ -92,7 +92,7 @@ header {
     display: inline-block;
     position: fixed;
     cursor: pointer;
-    background-color: $back-color;
+    //background-color: $back-color;
     #bar1,
     #bar2,
     #bar3 {
@@ -107,7 +107,7 @@ header {
 }
 
 #hamburger.transition {
-    left: 300px;
+    left: 200px;
     #bar1 {
         transform: rotate(-45deg) translate(-9px, 6px);
     }
@@ -171,7 +171,7 @@ header {
 
 #hamburger-menu.transition {
     margin-left: 0px;
-    width: 300px;
+    width: 200px;
     visibility: visible;
 }
 
