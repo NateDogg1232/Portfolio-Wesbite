@@ -141,12 +141,23 @@ a {
 a:hover {
   color: #4CCC14; }
 
-div.content {
-  display: flex; }
-  div.content .img {
-    width: 30%; }
-  div.content section {
-    width: 69%; }
+.holder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
 
-#cart .img {
-  background-image: url(../img/cart-logo.png); }
+.holder > section {
+  width: 40%; }
+
+#eclang {
+  width: 40%; }
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  header img {
+    width: 40%;
+    height: auto; }
+
+/*# sourceMappingURL=resume.css.map */

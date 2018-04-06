@@ -1,16 +1,22 @@
 @import 'main';
 
-div.content {
+.holder {
     display: flex;
-    .img {
-        width: 30%;
-    }
-    section {
-        width: 69%;
-    }
+    justify-content: space-between;
+    width: 100%;
 }
-#cart {
-	.img {
-		background-image: url(../img/cart-logo.png);
-	}
+.holder>section {
+    width: 40%;
+}
+#eclang {
+    width: 40%;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 40%;
+        height: auto;
+    }
 }
