@@ -25,6 +25,10 @@
 	background-image: url(../img/contactme.jpg);
 	background-size: cover;
 }
+#letter .heading {
+	background-image: url(../img/letter.jpg);
+	background-size: cover;
+}
 
 .card .heading {
 	background-repeat: no-repeat;
@@ -43,4 +47,16 @@
 
 .card:hover .heading h3 {
 	background-color: rgba(0,0,0,.8);
+}
+
+
+
+#thank {
+	margin-bottom: 50px;
+	a {
+		color: $dark-action-color;
+	}
+	a:hover {
+		color: $action-color;
+	}
 }

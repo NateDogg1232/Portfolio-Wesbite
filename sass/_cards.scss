@@ -50,3 +50,18 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+
+@media only screen and (max-width: 560px){
+    .card section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .heading {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+    }
+}

@@ -141,23 +141,23 @@ a {
 a:hover {
   color: #4CCC14; }
 
+article {
+  display: flex; }
+  article a {
+    color: #087700; }
+  article a:hover {
+    color: #4CCC14; }
+
 .holder {
   display: flex;
   justify-content: space-between;
   width: 100%; }
 
-.holder > section {
-  width: 40%; }
+.holder > div {
+  width: 45%;
+  display: inline-block; }
 
-#eclang {
-  width: 40%; }
+article p {
+  text-indent: 2em; }
 
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between; }
-  header img {
-    width: 40%;
-    height: auto; }
-
-/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=writing.css.map */

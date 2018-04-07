@@ -146,6 +146,9 @@ article {
   justify-content: space-around;
   flex-wrap: nowrap; }
 
+p {
+  text-indent: 2em; }
+
 div.image {
   background-image: url(../img/mybody.jpg);
   background-size: contain;
@@ -156,3 +159,5 @@ div.image {
 div.about {
   width: 79%;
   padding-left: 10%; }
+
+/*# sourceMappingURL=about.css.map */

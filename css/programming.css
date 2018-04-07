@@ -323,12 +323,21 @@ a:hover {
   flex-direction: column;
   justify-content: space-between; }
 
+@media only screen and (max-width: 560px) {
+  .card section {
+    display: flex;
+    flex-direction: column-reverse; }
+
+  .heading {
+    width: 100%; }
+
+  .info {
+    width: 100%; } }
 #github .heading {
   background-image: url("../img/github-icon.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
-
 #github p {
   text-indent: 0px; }
 
@@ -361,3 +370,5 @@ article {
 #amurtiger .screenie {
   background-size: cover;
   background-image: url("../img/siberiantiger.jpg"); }
+
+/*# sourceMappingURL=programming.css.map */
