@@ -141,6 +141,9 @@ a {
 a:hover {
   color: #4CCC14; }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px; } }
 .holder {
   display: flex;
   justify-content: space-between;
@@ -159,5 +162,35 @@ header {
   header img {
     width: 40%;
     height: auto; }
+
+p {
+  text-indent: 2em; }
+
+.noindent {
+  text-indent: 0px; }
+
+@media only screen and (max-width: 600px) {
+  .holder {
+    display: block; }
+
+  .holder > section {
+    width: 100%; }
+
+  #eclang {
+    width: 100%; }
+
+  header {
+    width: 100%;
+    display: block; }
+    header img {
+      width: 100%;
+      max-width: 60px;
+      height: auto; }
+
+  p {
+    text-indent: 2em; }
+
+  .noindent {
+    text-indent: 0px; } }
 
 /*# sourceMappingURL=resume.css.map */

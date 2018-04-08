@@ -30,6 +30,10 @@
 	background-size: cover;
 }
 
+article .card:nth-child(odd) section {
+	flex-direction: row-reverse;
+}
+
 .card .heading {
 	background-repeat: no-repeat;
 	color: $back-color;
@@ -46,7 +50,7 @@
 }
 
 .card:hover .heading h3 {
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.6);
 }
 
 

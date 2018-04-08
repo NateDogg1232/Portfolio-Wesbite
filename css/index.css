@@ -142,6 +142,9 @@ a {
 a:hover {
   color: #4CCC14; }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px; } }
 body {
   box-sizing: border-box;
   margin: 0;
@@ -284,6 +287,9 @@ a {
 a:hover {
   color: #4CCC14; }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px; } }
 .card {
   padding: 0px 20px;
   margin: 0;
@@ -323,10 +329,9 @@ a:hover {
   flex-direction: column;
   justify-content: space-between; }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .card section {
-    display: flex;
-    flex-direction: column-reverse; }
+    display: block; }
 
   .heading {
     width: 100%; }
@@ -360,6 +365,9 @@ a:hover {
   background-image: url(../img/letter.jpg);
   background-size: cover; }
 
+article .card:nth-child(odd) section {
+  flex-direction: row-reverse; }
+
 .card .heading {
   background-repeat: no-repeat;
   color: #f5f5f5; }
@@ -374,7 +382,7 @@ a:hover {
     text-align: center; }
 
 .card:hover .heading h3 {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 #thank {
   margin-bottom: 50px; }

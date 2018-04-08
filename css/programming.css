@@ -142,6 +142,9 @@ a {
 a:hover {
   color: #4CCC14; }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px; } }
 body {
   box-sizing: border-box;
   margin: 0;
@@ -284,6 +287,9 @@ a {
 a:hover {
   color: #4CCC14; }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px; } }
 .card {
   padding: 0px 20px;
   margin: 0;
@@ -323,10 +329,9 @@ a:hover {
   flex-direction: column;
   justify-content: space-between; }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .card section {
-    display: flex;
-    flex-direction: column-reverse; }
+    display: block; }
 
   .heading {
     width: 100%; }
@@ -354,7 +359,11 @@ article {
   display: flex; }
   .contentcontainer .screenie {
     width: 30%;
-    min-width: 500px; }
+    max-width: 60%; }
+    .contentcontainer .screenie a {
+      display: block;
+      width: 100%;
+      height: 100%; }
   .contentcontainer .writing {
     padding-left: 30px; }
 
@@ -364,11 +373,40 @@ article {
     display: block;
     width: 30%; }
 
+a.darker {
+  color: #087700; }
+
+a.darker:hover {
+  color: #4CCC14; }
+
 #cos .screenie {
   background-image: url("../img/cos-code.png"); }
 
 #amurtiger .screenie {
   background-size: cover;
   background-image: url("../img/siberiantiger.jpg"); }
+
+#digital-ethics .screenie {
+  background-size: cover;
+  background-image: url("../img/digital-ethics.jpg"); }
+
+#t6aip .screenie {
+  background-size: cover;
+  background-image: url("../img/t6aip.png"); }
+
+@media only screen and (max-width: 600px) {
+  .contentcontainer {
+    display: block; }
+    .contentcontainer .screenie {
+      width: 100%;
+      height: 20vh;
+      max-width: none; }
+    .contentcontainer .writing {
+      padding-left: 0px; }
+
+  .tools .content {
+    display: block; }
+    .tools .content p {
+      display: initial; } }
 
 /*# sourceMappingURL=programming.css.map */

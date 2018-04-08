@@ -53,10 +53,9 @@
 
 
 
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 700px){
     .card section {
-        display: flex;
-        flex-direction: column-reverse;
+        display: block;
     }
     .heading {
         width: 100%;

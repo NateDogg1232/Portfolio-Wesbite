@@ -7,14 +7,7 @@ var currentCard = 0;
 //Initialize all the cards
 for (let i = 0; i <= cardMax; i++) {
     cards[i].style.top = cardTop;
-    //cards[i].style.transitionDuration = "0s";
 }
-
-// var inputs = document.getElementsByTagName("input");
-// for (i=0; i<inputs.length; i++){
-//    inputs[i].onchange = checkForm();
-// }
-
 
 updateCardCount();
 

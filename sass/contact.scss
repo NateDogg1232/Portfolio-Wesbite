@@ -2,7 +2,7 @@
 @import 'main';
 $error-color: #D64B42;
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 div.contact {
@@ -93,4 +93,48 @@ div.contact {
 .card.center {
     margin-left: 0px;
     transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 500px){
+    .arrows {
+        display: none;
+    }
+    div.contact {
+        display: block;
+        p {
+            width: 100%;
+        }
+        form {
+            display: block;
+            width: 100%;
+            input, label {
+                width: 100%;
+            }
+            div {
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+            }
+        }
+    }
+    .cardcontainer {
+        .card {
+            transition-duration: 0s;
+            position: initial;
+            margin: auto;
+            left: initial;
+            top: initial;
+            width: 100%;
+        }
+    }
+    .card.left {
+        margin-left: initial;
+    }
+    .card.center {
+        transform: translateX(0%);
+    }
+    .card.right {
+        margin-left: 0px;
+    }
 }

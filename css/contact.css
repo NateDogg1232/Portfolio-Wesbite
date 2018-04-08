@@ -141,8 +141,11 @@ a {
 a:hover {
   color: #4CCC14; }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px; } }
 body {
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 div.contact {
   display: flex; }
@@ -212,5 +215,40 @@ div.contact {
 .card.center {
   margin-left: 0px;
   transform: translateX(-50%); }
+
+@media only screen and (max-width: 500px) {
+  .arrows {
+    display: none; }
+
+  div.contact {
+    display: block; }
+    div.contact p {
+      width: 100%; }
+    div.contact form {
+      display: block;
+      width: 100%; }
+      div.contact form input, div.contact form label {
+        width: 100%; }
+      div.contact form div {
+        width: 100%; }
+      div.contact form textarea {
+        width: 100%; }
+
+  .cardcontainer .card {
+    transition-duration: 0s;
+    position: initial;
+    margin: auto;
+    left: initial;
+    top: initial;
+    width: 100%; }
+
+  .card.left {
+    margin-left: initial; }
+
+  .card.center {
+    transform: translateX(0%); }
+
+  .card.right {
+    margin-left: 0px; } }
 
 /*# sourceMappingURL=contact.css.map */

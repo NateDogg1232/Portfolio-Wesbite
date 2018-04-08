@@ -141,6 +141,9 @@ a {
 a:hover {
   color: #4CCC14; }
 
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px; } }
 article {
   display: flex; }
   article a {
