@@ -1,0 +1,510 @@
+@import 'main';
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: $back-color;
+    color: $fore-color;
+}
+
+.horizrule {
+    padding-top: 20px;
+    margin: auto;
+    max-width: $max-width;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    hr {
+        display: inline-block;
+        border-color: $fore-color;
+        width: 49%;
+        height: 0px;
+    }
+    .circle {
+        display: inline-block;
+        border: 5px solid $accent-color;
+        border-radius: 50%;
+        width: 30px;
+        min-width: 30px !important;
+        height: 30px;
+    }
+    a {
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: 45px;
+        width: 45px;
+    }
+
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+.pagewrap {
+    max-width: $max-width;
+    margin: auto;
+    padding: 0px 5%;
+}
+
+
+.centertext {
+    text-align: center;
+}
+
+//Header content
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#hamburger {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    transition-duration: 1s;
+    img {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+#hamburger {
+    display: inline-block;
+    position: fixed;
+    cursor: pointer;
+    //background-color: $back-color;
+    #bar1,
+    #bar2,
+    #bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: $fore-color;
+        margin: 6px 0;
+        transition: 1s;
+        border-radius: 0px;
+
+    }
+}
+
+#hamburger.transition {
+    left: 200px;
+    #bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    #bar2 {
+        opacity: 0;
+    }
+    #bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+#hamburger-menu {
+    position: fixed;
+    height: 100vh;
+    margin-left: -100px;
+    visibility: hidden;
+    width: 100px;
+    transition-duration: 1s;
+    background-color: $fore-color;
+    opacity: 0.95;
+    z-index: 100000000000000;
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    a {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: $back-color;
+        margin: 0;
+    }
+    a:hover {
+        background-color: $accent-color;
+        color: $fore-color;
+    }
+    .linkcontainer {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: $back-color;
+    }
+    .linkcontainer:hover {
+        background-color: $accent-color;
+        color: $fore-color;
+    }
+    #hiddenlist {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: $fore-color;
+        color: $back-color;
+    }
+
+}
+
+#hamburger-menu.transition {
+    margin-left: 0px;
+    width: 200px;
+    visibility: visible;
+}
+
+a {
+    color: $fore-color;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+a:hover {
+    color: $action-color;
+}
+
+.card {
+    padding: 0px 20px;
+    margin: 0;
+    display: block;
+    color: $fore-color;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.card:visited {
+    color: $fore-color;
+}
+
+.card:active {
+    border: none;
+}
+
+.card:hover {
+    color: $fore-color;
+}
+
+.action-hover {
+    text-align: right;
+    transition-duration: 0.5s;
+}
+
+.heading {
+    transition-duration: 0.5s;
+    width: 30%;
+    height: 300px;
+    .header {
+        width: 100%;
+
+    }
+}
+
+.card section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// Main MQ
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+//Card MQ
+@media only screen and (max-width: 700px){
+    .card section {
+        display: block;
+    }
+    .heading {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+    }
+}
+
+
+#music {
+	.card {
+	    display: flex;
+	    align-content: center;
+	    .thumbnail {
+	        width: 19%;
+	        background-image: url(http://via.placeholder.com/350x350);
+	        background-size: cover;
+	        background-repeat: no-repeat;
+	    }
+	    .player {
+	        width: 60%;
+	        padding: 0 20px;
+	        audio {
+	            margin: auto;
+	            display: block;
+	            width: 100%;
+	            color: $back-color;
+	        }
+	    }
+	    .info {
+	        width: 19%;
+	    }
+	    margin-bottom: 50px;
+	    height: 200px;
+	}
+
+	.intro {
+	    margin-bottom: 50px;
+	}
+
+	//This Is It
+	#this {
+	    .thumbnail {
+	        background-image: url(../img/this-is-it-thumbnail.jpg);
+	    }
+	}
+
+	//The Fight of The Century
+	#fight {
+	    .thumbnail {
+	        background-image: url(../img/fight-of-the-century-thumbnail.jpg);
+	    }
+	}
+
+	//Beyond Hell's Gate
+	#hell {
+	    .thumbnail {
+	        background-image: url(../img/hells-gate-thumbnail.jpg);
+	    }
+	}
+
+	//Walk Through The Dark Forest
+	#walk {
+	    .thumbnail {
+	        background-image: url(../img/walk-through-dark-forest-thumbnail.jpg);
+	    }
+	}
+}
+
+#home {
+	#about .heading {
+		background-image: url(../img/myface.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#resume .heading {
+		background-image: url(../img/resume.jpg);
+		background-size: auto;
+		background-position: left;
+	}
+	#programming .heading {
+		background-image: url(../img/cos-code.png);
+	}
+	#music .heading {
+		background-image: url(../img/music.jpg);
+	}
+	#writing .heading {
+		background-image: url(../img/writing.jpg);
+	}
+	#contact .heading {
+		background-image: url(../img/contactme.jpg);
+		background-size: cover;
+	}
+	#letter .heading {
+		background-image: url(../img/letter.jpg);
+		background-size: cover;
+	}
+
+	article .card:nth-child(odd) section {
+		flex-direction: row-reverse;
+	}
+
+	.card .heading {
+		background-repeat: no-repeat;
+		color: $back-color;
+		h3 {
+			transition-duration: 1s;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,.2);
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+	}
+
+	.card:hover .heading h3 {
+		background-color: rgba(0,0,0,.6);
+	}
+
+
+
+	#thank {
+		margin-bottom: 50px;
+		a {
+			color: $dark-action-color;
+		}
+		a:hover {
+			color: $action-color;
+		}
+	}
+}
+
+#contact {
+	$error-color: #D64B42;
+	body {
+	    overflow-x: hidden;
+	}
+
+	div.contact {
+	    display: flex;
+	    p {
+	        width: 30%;
+	    }
+	    form {
+	        :focus {
+	            outline-color: $action-color;
+	        }
+	        width: 70%;
+	        display: flex;
+	        //flex-direction: column;
+	        flex-wrap: nowrap;
+	        input, label {
+	            display: block;
+	            width: 50%;
+	            margin: 0;
+	        }
+	        :invalid {
+	            outline-color: $error-color;
+	        }
+	        textarea {
+	            resize: vertical;
+	        }
+	        div {
+	            width: 49%;
+	        }
+	    }
+	}
+
+	#out {
+	    color: $error-color;
+	}
+
+	.cardcontainer {
+	    overflow-x: hidden;
+	    width: 100%;
+	    .card {
+	        display: block;
+	        height: 500px;
+	        width: 400px;
+	        overflow: hidden;
+	        position: absolute;
+	        left: 50%;
+	        margin-left: -200px;
+	        transition-timing-function:ease;
+	        .img {
+	            display: inline-block;
+	            height: 300px;
+	            width: 100%;
+	            color: $fore-color;
+	        }
+	        .head {
+	            text-align: center;
+	        }
+	        //link
+	        .link p:hover {
+	            color: $action-color;
+	        }
+	        .link {
+	            text-align: center;
+	        }
+	        .link p {
+	            text-align: center;
+	            color: $fore-color;
+	        }
+	    }
+
+	}
+
+	.arrows {
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	}
+	#cardcount {
+	    flex: 1;
+	}
+
+	.card.left {
+	    margin-left: -4000px;
+	}
+	.card.right {
+	    margin-left: 4000px;
+	}
+	.card.center {
+	    margin-left: 0px;
+	    transform: translateX(-50%);
+	}
+
+	@media only screen and (max-width: 500px){
+	    .arrows {
+	        display: none;
+	    }
+	    div.contact {
+	        display: block;
+	        p {
+	            width: 100%;
+	        }
+	        form {
+	            display: block;
+	            width: 100%;
+	            input, label {
+	                width: 100%;
+	            }
+	            div {
+	                width: 100%;
+	            }
+	            textarea {
+	                width: 100%;
+	            }
+	        }
+	    }
+	    .cardcontainer {
+	        .card {
+	            transition-duration: 0s;
+	            position: initial;
+	            margin: auto;
+	            left: initial;
+	            top: initial;
+	            width: 100%;
+	        }
+	    }
+	    .card.left {
+	        margin-left: initial;
+	    }
+	    .card.center {
+	        transform: translateX(0%);
+	    }
+	    .card.right {
+	        margin-left: 0px;
+	    }
+	}
+}
