@@ -1,3 +1,5 @@
+
+<?php $pagetitle="About" ?>
 <h1>Nathaniel Barragan: About Me</h1>
 <article>
 	<div class="image"></div>

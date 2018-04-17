@@ -20,10 +20,10 @@
 	function loadPage($page) {
 		//Include the head of the HTML
 		include("modules/head.php");
-		//Set the body ID to use with our page
-		echo "<body id=$page>";
 		//And we include the header itself
 		include("modules/header.php");
+		//Set the body ID to use for our CSS
+		echo "<body id=$page>";
 		//And we get the content in there
 		include("content/$page.php");
 		//And close it off with the footer

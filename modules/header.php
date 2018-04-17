@@ -24,7 +24,7 @@
     </div>
 </header>
 <div class="pagewrap">
-    <div class="horizrule">
+    <div class="headerthingy">
         <hr>
         <a href="?page=home" class="circle"></a>
         <hr>

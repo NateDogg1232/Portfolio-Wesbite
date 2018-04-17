@@ -27,8 +27,6 @@ function compile(file) {
     });
 }
 
-//TODO: Make the watcher that checks for new files and file changes better
-
 function fileChanged(eventType, fileName) {
     if (!fsTimeout) {
         if (eventType == "change") {
