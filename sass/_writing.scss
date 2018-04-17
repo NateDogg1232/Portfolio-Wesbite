@@ -1,0 +1,28 @@
+@import 'vars';
+body#writing {
+    padding-bottom: 20px;
+    article {
+        display: flex;
+        a {
+    		color: $dark-action-color;
+    	}
+    	a:hover {
+    		color: $action-color;
+    	}
+    }
+    .holder {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .holder>div {
+        width: 45%;
+        display: inline-block;
+    }
+
+    article {
+        p {
+            text-indent: 2em;
+        }
+    }
+}

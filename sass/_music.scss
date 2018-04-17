@@ -1,0 +1,60 @@
+@import 'vars';
+body#music {
+	.card {
+	    display: flex;
+	    align-content: center;
+	    .thumbnail {
+	        width: 19%;
+	        background-image: url(http://via.placeholder.com/350x350);
+	        background-size: cover;
+	        background-repeat: no-repeat;
+	    }
+	    .player {
+	        width: 60%;
+	        padding: 0 20px;
+	        audio {
+	            margin: auto;
+	            display: block;
+	            width: 100%;
+	            color: $back-color;
+	        }
+	    }
+	    .info {
+	        width: 19%;
+	    }
+	    margin-bottom: 50px;
+	    height: 200px;
+	}
+
+	.intro {
+	    margin-bottom: 50px;
+	}
+
+	//This Is It
+	#this {
+	    .thumbnail {
+	        background-image: url(../img/this-is-it-thumbnail.jpg);
+	    }
+	}
+
+	//The Fight of The Century
+	#fight {
+	    .thumbnail {
+	        background-image: url(../img/fight-of-the-century-thumbnail.jpg);
+	    }
+	}
+
+	//Beyond Hell's Gate
+	#hell {
+	    .thumbnail {
+	        background-image: url(../img/hells-gate-thumbnail.jpg);
+	    }
+	}
+
+	//Walk Through The Dark Forest
+	#walk {
+	    .thumbnail {
+	        background-image: url(../img/walk-through-dark-forest-thumbnail.jpg);
+	    }
+	}
+}

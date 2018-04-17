@@ -1,0 +1,61 @@
+@import 'vars';
+body#resume {
+    padding-bottom: 20px;
+
+    .holder {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .holder>section {
+        width: 40%;
+    }
+    #eclang {
+        width: 40%;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 40%;
+            height: auto;
+        }
+    }
+    p {
+        text-indent: 2em;
+    }
+
+    .noindent {
+        text-indent: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .holder {
+            display: block;
+        }
+        .holder>section {
+            width: 100%;
+        }
+        #eclang {
+            width: 100%;
+        }
+        header {
+            width: 100%;
+            display: block;
+            img {
+                width: 100%;
+                max-width: 60px;
+                height: auto;
+            }
+        }
+        p {
+            text-indent: 2em;
+        }
+
+        .noindent {
+            text-indent: 0px;
+        }
+    }
+
+}

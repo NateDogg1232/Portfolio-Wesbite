@@ -1,0 +1,65 @@
+@import 'vars';
+body#home {
+	#about .heading {
+		background-image: url(../img/myface.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#resume .heading {
+		background-image: url(../img/resume.jpg);
+		background-size: auto;
+		background-position: left;
+	}
+	#programming .heading {
+		background-image: url(../img/cos-code.png);
+	}
+	#music .heading {
+		background-image: url(../img/music.jpg);
+	}
+	#writing .heading {
+		background-image: url(../img/writing.jpg);
+	}
+	#contact .heading {
+		background-image: url(../img/contactme.jpg);
+		background-size: cover;
+	}
+	#letter .heading {
+		background-image: url(../img/letter.jpg);
+		background-size: cover;
+	}
+
+	article .card:nth-child(odd) section {
+		flex-direction: row-reverse;
+	}
+
+	.card .heading {
+		background-repeat: no-repeat;
+		color: $back-color;
+		h3 {
+			transition-duration: 1s;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,.2);
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+	}
+
+	.card:hover .heading h3 {
+		background-color: rgba(0,0,0,.6);
+	}
+
+
+
+	#thank {
+		margin-bottom: 50px;
+		a {
+			color: $dark-action-color;
+		}
+		a:hover {
+			color: $action-color;
+		}
+	}
+}

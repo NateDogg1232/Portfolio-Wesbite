@@ -1,19 +1,19 @@
 <div id="hamburger-menu">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="?page=home">Home</a></li>
+        <li><a href="?page=about">About Me</a></li>
+        <li><a href="?page=resume">Résumé</a></li>
         <li>
             <div class="linkcontainer" onmouseover="subMenuOpen();" onmouseout="subMenuClose();">
                 Portfolio
                 <ul id="hiddenlist">
-                    <li><a href="programming.html">Programming</a></li>
-                    <li><a href="music.html">Music</a></li>
-                    <li><a href="writing.html">Writing</a></li>
+                    <li><a href="?page=programming">Programming</a></li>
+                    <li><a href="?page=music">Music</a></li>
+                    <li><a href="?page=writing">Writing</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="?page=contact">Contact Me</a></li>
     </ul>
 </div>
 <header>
@@ -26,6 +26,6 @@
 <div class="pagewrap">
     <div class="horizrule">
         <hr>
-        <a href="index.html" class="circle"></a>
+        <a href="?page=home" class="circle"></a>
         <hr>
     </div>
