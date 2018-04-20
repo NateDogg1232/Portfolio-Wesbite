@@ -23,9 +23,9 @@
         <div id="bar3"></div>
     </div>
 </header>
+<div class="headerthingy">
+    <hr>
+    <a href="?page=home" class="circle"></a>
+    <hr>
+</div>
 <div class="pagewrap">
-    <div class="headerthingy">
-        <hr>
-        <a href="?page=home" class="circle"></a>
-        <hr>
-    </div>

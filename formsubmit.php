@@ -4,6 +4,8 @@
 	} else {
 		$originalpage = "home";
 	}
+
+	//We start our output variable
 	$file = "<woahthisismeta>\n";
 	if (check($_POST['fname'])) {
 		$file .= $_POST['fname'] . ',';
@@ -25,7 +27,7 @@
 	}
 	//Also translate any '\n' to '\r\n'
 	$filetowrite = fopen("contacts.txt", "a+t") or formFail("Cannot open contacts file");
-	fwrite($filetowrite, $file);
+	fwrite($filetowrite, $file) or formFail("Cannot write to contacts file");
 	formSuccess();
 	function formSuccess() {
 		global $originalpage;

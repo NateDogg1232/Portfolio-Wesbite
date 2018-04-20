@@ -27,6 +27,7 @@
 <body>
 	<h1>Contact Me peoples</h1>
 	<?php
+        //TODO: Do this right
 		$file = fread(fopen("contacts.txt", "rt"), filesize("contacts.txt"));
 		//Time to do some parsing.
 		//We first split into an array of people

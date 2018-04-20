@@ -27,13 +27,15 @@ body {
     width: 49%;
     height: 0px; }
   .headerthingy .circle {
+    all: initial;
     display: inline-block;
     border: 5px solid #efda00;
     border-radius: 50%;
     width: 30px;
-    min-width: 30px !important;
+    min-width: 30px;
     height: 30px; }
   .headerthingy a {
+    all: initial;
     padding: 0;
     margin: 0;
     display: block;
@@ -46,8 +48,7 @@ h1 {
 
 .pagewrap {
   max-width: 1500px;
-  margin: auto;
-  padding: 0px 5%; }
+  margin: auto; }
 
 .centertext {
   text-align: center; }
@@ -190,30 +191,34 @@ a:hover {
 @media only screen and (max-width: 500px) {
   body {
     font-size: 15px; } }
+
 @media only screen and (max-width: 700px) {
   .card section {
     display: block; }
-
   .heading {
     width: 100%; }
-
   .info {
     width: 100%; } }
+
 body#about article {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: nowrap; }
+
 body#about p {
   text-indent: 2em; }
+
 body#about div.image {
   background-image: url(../img/mybody.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 20%; }
+
 body#about div.about {
   width: 79%;
   padding-left: 10%; }
+
 @media only screen and (max-width: 500px) {
   body#about div.about {
     width: 100%;
@@ -328,24 +333,32 @@ body#home #about .heading {
   background-image: url(../img/myface.jpg);
   background-size: cover;
   background-position: center; }
+
 body#home #resume .heading {
   background-image: url(../img/resume.jpg);
   background-size: auto;
   background-position: left; }
+
 body#home #programming .heading {
   background-image: url(../img/cos-code.png); }
+
 body#home #music .heading {
   background-image: url(../img/music.jpg); }
+
 body#home #writing .heading {
   background-image: url(../img/writing.jpg); }
+
 body#home #contact .heading {
   background-image: url(../img/contactme.jpg);
   background-size: cover; }
+
 body#home #letter .heading {
   background-image: url(../img/letter.jpg);
   background-size: cover; }
+
 body#home article .card:nth-child(odd) section {
   flex-direction: row-reverse; }
+
 body#home .card .heading {
   background-repeat: no-repeat;
   color: #f5f5f5; }
@@ -358,8 +371,10 @@ body#home .card .heading {
     padding: 0;
     margin: 0;
     text-align: center; }
+
 body#home .card:hover .heading h3 {
   background-color: rgba(0, 0, 0, 0.6); }
+
 body#home #thank {
   margin-bottom: 50px; }
   body#home #thank a {
@@ -387,14 +402,19 @@ body#music .card {
       color: #f5f5f5; }
   body#music .card .info {
     width: 19%; }
+
 body#music .intro {
   margin-bottom: 50px; }
+
 body#music #this .thumbnail {
   background-image: url(../img/this-is-it-thumbnail.jpg); }
+
 body#music #fight .thumbnail {
   background-image: url(../img/fight-of-the-century-thumbnail.jpg); }
+
 body#music #hell .thumbnail {
   background-image: url(../img/hells-gate-thumbnail.jpg); }
+
 body#music #walk .thumbnail {
   background-image: url(../img/walk-through-dark-forest-thumbnail.jpg); }
 
@@ -403,14 +423,19 @@ body#programming #github .heading {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
+
 body#programming #github p {
   text-indent: 0px; }
+
 body#programming h3 {
   text-align: center; }
+
 body#programming p {
   text-indent: 2em; }
+
 body#programming article {
   margin-bottom: 100px; }
+
 body#programming .contentcontainer {
   display: flex; }
   body#programming .contentcontainer .screenie {
@@ -422,26 +447,34 @@ body#programming .contentcontainer {
       height: 100%; }
   body#programming .contentcontainer .writing {
     padding-left: 30px; }
+
 body#programming .tools .content {
   display: flex; }
   body#programming .tools .content p {
     display: block;
     width: 30%; }
+
 body#programming a.darker {
   color: #087700; }
+
 body#programming a.darker:hover {
   color: #4CCC14; }
+
 body#programming #cos .screenie {
   background-image: url("../img/cos-code.png"); }
+
 body#programming #amurtiger .screenie {
   background-size: cover;
   background-image: url("../img/siberiantiger.jpg"); }
+
 body#programming #digital-ethics .screenie {
   background-size: cover;
   background-image: url("../img/digital-ethics.jpg"); }
+
 body#programming #t6aip .screenie {
   background-size: cover;
   background-image: url("../img/t6aip.png"); }
+
 @media only screen and (max-width: 600px) {
   body#programming .contentcontainer {
     display: block; }
@@ -513,5 +546,3 @@ body#writing {
     display: inline-block; }
   body#writing article p {
     text-indent: 2em; }
-
-/*# sourceMappingURL=main.css.map */

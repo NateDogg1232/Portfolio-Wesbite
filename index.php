@@ -13,7 +13,6 @@
 			loadPage("404");
 		}
 	} else {
-		if(isset($_URL))
 		//There is no page variable present, so we just load the home page
 		loadPage("home");
 	}
@@ -21,10 +20,10 @@
 	function loadPage($page) {
 		//Include the head of the HTML
 		include("modules/head.php");
-		//And we include the header itself
-		include("modules/header.php");
 		//Set the body ID to use for our CSS
 		echo "<body id=$page>";
+		//And we include the header itself
+		include("modules/header.php");
 		//And we get the content in there
 		include("content/$page.php");
 		//And close it off with the footer
