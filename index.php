@@ -13,6 +13,7 @@
 			loadPage("404");
 		}
 	} else {
+		if(isset($_URL))
 		//There is no page variable present, so we just load the home page
 		loadPage("home");
 	}

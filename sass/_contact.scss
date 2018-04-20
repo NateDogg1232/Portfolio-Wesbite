@@ -6,6 +6,14 @@ body#contact {
 	    p {
 	        width: 30%;
 	    }
+		p.formsuccess {
+			width: 100%;
+			color: $action-color;
+		}
+		p.formfail {
+			width: 100%;
+			color: $error-color;
+		}
 	    form {
 	        :focus {
 	            outline-color: $action-color;
