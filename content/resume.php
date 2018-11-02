@@ -21,6 +21,14 @@
 								<li>Back end programming using PHP and SQL</li>
 							</ul>
 						</li>
+						<li>Interactive Game Design
+							<ul>
+								<li>Use Unity to set up environments</li>
+								<li>Use C# and the Unity engine effectively</li>
+								<li>3D modeling using Maya</li>
+								<li>Texture creation using Photoshop</li>
+							</ul>
+						</li>
 					</ul>
 				</section>
 				<section>
