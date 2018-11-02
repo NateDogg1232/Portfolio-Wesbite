@@ -9,7 +9,7 @@
                 <ul id="hiddenlist">
                     <li><a href="?page=programming">Programming</a></li>
                     <li><a href="?page=music">Music</a></li>
-                    <li><a href="?page=writing">Writing</a></li>
+                    <!-- <li><a href="?page=writing">Writing</a></li> -->
                 </ul>
             </div>
         </li>

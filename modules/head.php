@@ -11,5 +11,6 @@
                     echo ucfirst($page) . " | ";
             ?>
         Nathaniel Barragan</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.png" type="image/ico">
 </head>

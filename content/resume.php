@@ -18,6 +18,7 @@
 								<li>Use CSS effectively</li>
 								<li>Layout using HTML</li>
 								<li>JavaScript</li>
+								<li>Back end programming using PHP and SQL</li>
 							</ul>
 						</li>
 					</ul>
@@ -72,28 +73,33 @@
 					<li>Git</li>
 					<li>Photoshop</li>
 					<li>Spark</li>
+					<li>Unity</li>
+					<li>Maya</li>
 				</ul>
 			</section>
 			<section>
 				<h3>Programming Languages</h3>
 				<ul>
-					<li>C# (4 years)</li>
-					<li>Visual Basic.NET (2 years)</li>
-					<li>C (2 years)</li>
-					<li>x86 Assembly (2 years)</li>
-					<li>6502 Assembly (1 year)</li>
-					<li>HTML (8 months)</li>
-					<li>CSS (8 months)
+					<li>Rust</li>
+					<li>C#</li>
+					<li>Visual Basic.NET</li>
+					<li>C</li>
+					<li>x86 Assembly</li>
+					<li>6502 Assembly</li>
+					<li>HTML</li>
+					<li>CSS
 						<ul>
-							<li>Sass (2 months)</li>
+							<li>Sass</li>
 						</ul>
 					</li>
-					<li>JavaScript (6 months)
+					<li>JavaScript
 						<ul>
-							<li>JQuery (5 months)</li>
-							<li>Node.js (2 months)</li>
+							<li>JQuery</li>
+							<li>Node.js</li>
 						</ul>
 					</li>
+					<li>PHP</li>
+					<li>SQL</li>
 				</ul>
 			</section>
 		</div>
@@ -103,11 +109,11 @@
 				<section>
 					<h4>Instruments</h4>
 					<ul>
-						<li>Violin (7 years)</li>
-						<li>Voice (4 years)</li>
-						<li>Guitar (2 years)</li>
-						<li>Bass Guitar (2 years)</li>
-						<li>Piano (1 year)</li>
+						<li>Violin</li>
+						<li>Voice</li>
+						<li>Guitar</li>
+						<li>Bass Guitar</li>
+						<li>Piano</li>
 					</ul>
 				</section>
 				<section>
@@ -120,19 +126,6 @@
 					</ul>
 				</section>
 			</div>
-		</section>
-		<section>
-			<h3 class="centertext">Letters of recommendation</h3>
-			<section>
-				<h4>Letter 1</h4>
-				<p class="noindent">To whomever it may concern,</p>
-				<p>I’ve had Nathaniel for three years in my choir class. It’s been a pleasure and having him as a section leader for the bass section of the choir, I hold him in high regard for his responsibility. He’s always tried his best to make it to concerts and he’s never missed one concert to this day. He’s always tried to make it to rehearsals, but I do understand that he cannot always make it to them as he not only does orchestra, but also does CART where he’s learning to make web applications.</p>
-				<p>Regarding his skills in choir, he started in 8th grade, and quickly rose the ranks, gaining many solos. Due to those solos, I’ve heard his voice and I knew he had to be in my highest ranked choir, the chamber choir. He had the confidence to be able to sing out to make sure the baritone section which he sang in was able to be heard. It’s hard to find strong baritones. Sadly, his voice ended up dropping and I decided to put him on bass, but he never lost his presence and with the music skill he gained, and the responsibility he showed, I knew I needed to have him as a section leader, so this year, I decided to put him as a section leader.</p>
-				<p>As section leader, Nathaniel has the responsibility of keeping his fellow section members behaved and on task. He also is the one that decides details, such as where other members should breathe on sections with staggered breathing and leading sectionals. He has been doing very well in this position and can trust him to do so for any sort of situation. He’s a great leader but also doesn’t question authority.</p>
-				<p>All in all, Nathaniel is a great student. He is very responsible and makes for a fine leader.</p>
-				<p class="noindent">Thank you,</p>
-				<p class="noindent">Mrs. Tonya Florer, Choir Director at Clovis West High School</p>
-			</section>
 		</section>
 	</article>
 </div>

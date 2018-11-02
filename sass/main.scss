@@ -117,6 +117,7 @@ header {
     visibility: hidden;
     width: 100px;
     transition-duration: 1s;
+    transition-property: margin, width;
     background-color: $fore-color;
     opacity: 0.95;
     z-index: 100000000000000;

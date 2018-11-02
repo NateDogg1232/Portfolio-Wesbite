@@ -7,7 +7,7 @@
 					<h3>About me</h3>
 				</div>
 				<div class="info">
-					<p>I am an aspiring programmer living in Fresno. I’ve been programmingfor 6 years. Some main things that I do with my free time is...</p>
+					<p>I am an aspiring programmer and have been programming as my hobby for about 7 years. Although my interests in...</p>
 					<p class="action-hover">Click to learn more</p>
 				</div>
 			</section>
@@ -40,12 +40,12 @@
 					<h3>Music</h3>
 				</div>
 				<div class="info">
-					<p>Writing music is another one of my passions, and I mostly classical, but also sometimes chiptune.</p>
+					<p>Writing music is another one of my passions. I write mostly classical, but also sometimes chiptune.</p>
 					<p class="action-hover">Click to listen</p>
 				</div>
 			</section>
 		</a>
-		<a href="?page=writing" class="card">
+		<!-- <a href="?page=writing" class="card">
 			<section id="writing">
 				<div class="heading">
 					<h3>Portfolio: Writing Samples</h3>
@@ -55,7 +55,7 @@
 					<p class="action-hover">Click to learn more</p>
 				</div>
 			</section>
-		</a>
+		</a> -->
 	<section id="thank">
 		<h2 class="centertext">Thank You!</h2>
 		<p>Thank you for looking at my website and considering me as a potential candidate. If you'd like to contact me, be sure to drop me a message at my <a href="?page=contact">contact me page.</a></p>

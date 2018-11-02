@@ -4,9 +4,10 @@ body#music {
 	    display: flex;
 	    align-content: center;
 	    .thumbnail {
-	        width: 19%;
+	        width: 16%;
+			height: 100%;
 	        background-image: url(http://via.placeholder.com/350x350);
-	        background-size: cover;
+	        background-size: contain;
 	        background-repeat: no-repeat;
 	    }
 	    .player {
@@ -25,8 +26,12 @@ body#music {
 	    margin-bottom: 50px;
 	    height: 200px;
 	}
+	.card:nth-child(2n) {
+		flex-direction: row-reverse;
+	}
 
 	.intro {
+		padding: 0px 20px;
 	    margin-bottom: 50px;
 	}
 
@@ -56,5 +61,27 @@ body#music {
 	    .thumbnail {
 	        background-image: url(../img/walk-through-dark-forest-thumbnail.jpg);
 	    }
+	}
+
+	@media only screen and (max-width: 600px) {
+		.card {
+			display: block;
+			.thumbnail {
+				width: 100%;
+				min-height: 200px;
+			}
+			.player {
+				width: 100%;
+				padding: 0px;
+				audio {
+					all: initial;
+					width: 100%;
+				}
+			}
+			.info {
+				width: 100%;
+			}
+			height: initial;
+		}
 	}
 }

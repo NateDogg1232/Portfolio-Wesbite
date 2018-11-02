@@ -46,6 +46,48 @@ body#contact {
 	.cardcontainer {
 	    overflow-x: hidden;
 	    width: 100%;
+		@mixin goLeft() {
+			margin-left: -4000px;
+		}
+		@mixin goRight() {
+			margin-left: 4000px;
+		}
+		@mixin goCenter() {
+			margin-left: 0px;
+			transform: translateX(-50%);
+		}
+		@keyframes slide-in-left {
+			from {
+				@include goLeft();
+			}
+			to {
+				@include goCenter();
+			}
+		}
+		@keyframes slide-in-right {
+			from {
+				@include goRight();
+			}
+			to {
+				@include goCenter();
+			}
+		}
+		@keyframes slide-out-left {
+			from {
+				@include goCenter();
+			}
+			to {
+				@include goLeft();
+			}
+		}
+		@keyframes slide-out-right {
+			from {
+				@include goCenter();
+			}
+			to {
+				@include goRight();
+			}
+		}
 	    .card {
 	        display: block;
 	        height: 500px;
@@ -55,6 +97,9 @@ body#contact {
 	        left: 50%;
 	        margin-left: -200px;
 	        transition-timing-function:ease;
+			animation-timing-function: ease;
+			animation-duration: 2s;
+			@include goLeft();
 	        .img {
 	            display: inline-block;
 	            height: 300px;
@@ -76,6 +121,22 @@ body#contact {
 	            color: $fore-color;
 	        }
 	    }
+		.card.left {
+			margin-left: -4000px;
+		}
+		.card.right {
+			margin-left: 4000px;
+		}
+		.card.center {
+			margin-left: 0px;
+			transform: translateX(-50%);
+		}
+		.card.show {
+			@include goCenter();
+		}
+		.card.hide {
+			@include goLeft();
+		}
 
 	}
 
@@ -88,16 +149,6 @@ body#contact {
 	    flex: 1;
 	}
 
-	.card.left {
-	    margin-left: -4000px;
-	}
-	.card.right {
-	    margin-left: 4000px;
-	}
-	.card.center {
-	    margin-left: 0px;
-	    transform: translateX(-50%);
-	}
 
 	@media only screen and (max-width: 500px){
 	    .arrows {
@@ -125,21 +176,20 @@ body#contact {
 	    .cardcontainer {
 	        .card {
 	            transition-duration: 0s;
+				animation-duration: 0s;
 	            position: initial;
 	            margin: auto;
 	            left: initial;
 	            top: initial;
 	            width: 100%;
 	        }
-	    }
-	    .card.left {
-	        margin-left: initial;
-	    }
-	    .card.center {
-	        transform: translateX(0%);
-	    }
-	    .card.right {
-	        margin-left: 0px;
+			.card.hide {
+				margin-left: initial;
+			}
+			.card.show {
+				margin-left: initial;
+				transform: translateX(0%);
+			}
 	    }
 	}
 }

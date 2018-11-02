@@ -14,7 +14,8 @@
 		}
 	} else {
 		//There is no page variable present, so we just load the home page
-		loadPage("home");
+		header("Location: ?page=home");
+		exit;
 	}
 	//Loads a page
 	function loadPage($page) {

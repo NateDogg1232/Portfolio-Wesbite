@@ -1,6 +1,6 @@
 <h1>Portfolio: Programming</h1>
 <article>
-	<h3 class="centertext">I have been programming as a hobby for 6 years</h3>
+	<h3 class="centertext">I have been programming as a hobby for 7 years</h3>
 	<a href="https://github.com/NateDogg1232" class="card">
 		<section id="github">
 			<div class="heading">
@@ -9,6 +9,17 @@
 			<div class="info">
 				<p>I put most of my personal projects on GitHub, even if I do not plan on collaborating with others.</p>
 				<p class="action-hover">Click to go to my GitHub profile</p>
+			</div>
+		</section>
+	</a>
+	<a href="https://gitlab.com/NateDogg1232" class="card">
+		<section id="gitlab">
+			<div class="heading">
+
+			</div>
+			<div class="info">
+				<p>As of late, I have also been uploading projects to GitLab</p>
+				<p class="action-hover">Click to go to my GitLab profile</p>
 			</div>
 		</section>
 	</a>
@@ -23,8 +34,8 @@
 			</div>
 			<div class="writing">
 				<p>COS is the perfect OS to look at, not to use as a main OS, but to learn the basics of Operating System development.
-				This project was done to test my abilities to program. This project has been going on for about two and has gone through many different rebases of the code.</p>
-				<p>The original goal with this OS was to create a free standing environment in which I can run a bytecode that I had created. This was to maximize speed, and I had figured that it would be a good idea to create a full OS based around this idea.</p>
+				This project was done to test my abilities to program. This project has been going on for about two years and has gone through many different rebases of the code.</p>
+				<p>The original goal with this OS was to create a free-standing environment in which I can run a bytecode that I had created. This was to maximize speed, and I had figured that it would be a good idea to create a full OS based on this idea.</p>
 			</div>
 		</div>
 	</section>
@@ -55,8 +66,8 @@
 				<a href="http://cartwebapp.com/student17/project1/amurtiger/"></a>
 			</div>
 			<div class="writing">
-				<p>The Endangered Species Website was our first major project in the class. This was a website about endangered species and the species we chose was the Amur Tiger. This project was a group project, but my group, personally, only consisted of me and one other person, Sean Raymond.</p>
-				<p>We started by making mock-ups of every single page of the webpage. After this, we worked on finishing all the content of the page. All of this occurring before we write any code. After this, we started actually coding the website. We were forced to complete certain milestones, and we did our best to meet these milestones on time.</p>
+				<p>The Endangered Species Website was our first major project in the class. This was a website about endangered species and the species we chose was the Amur Tiger. This project was a partner project consisting of me and a colleague Sean Raymond</p>
+				<p>We started by making mock-ups of every single page of the webpage. After this, we worked on finishing all the content of the page. All of this occurring before we write any code. After this, we started actually coding the website. We were forced to complete certain milestones, and we succeeded in meeting every single one of them.</p>
 			</div>
 		</div>
 	</section>
@@ -85,8 +96,8 @@
 				<a href="http://cartwebapp.com/student17/showcase/pm/"></a>
 			</div>
 			<div class="writing">
-				<p>The Digital Ethics website iis the first website that I have done in a large scale group, being done with my entire class. The reason for this website was to open people’s eyes to the dangers of irresponsibility on social media and how to be responsible on social media.</p>
-				<p>The first part of this was to create the content which would be used on the page. This first started with research and led to creating essays and writing sections of the page. After this, we had moved to deciding on a design for the page and deciding on what is important to the design of the page. After this, I was assigned into two groups. One was the Social Media Responsibility group, where our group worked on all the pages in the section. The other was the home page and general design group. This was a two person group where we decided on the general styles of the page and worked on generating the home page.</p>
+				<p>The Digital Ethics website is the first website that I have done in a large scale group, being done with my entire class. The reason for this website was to open people’s eyes to the dangers of irresponsibility on social media and how to be responsible on social media.</p>
+				<p>The first part of this was to create the content which would be used on the page. This first started with research and led to creating essays and writing sections of the page. After this, we had moved to decide on a design for the page and deciding on what is important to the design of the page. After this, I was assigned to two groups. One was the Social Media Responsibility group, where our group worked on all the pages in the section. The other was the home page and general design group. This was a two-person group where we decided on the general styles of the page and worked on generating the home page.</p>
 			</div>
 		</div>
 	</section>
@@ -114,8 +125,8 @@
 				<a href="https://github.com/NateDogg1232/T6AIP"></a>
 			</div>
 			<div class="writing">
-				<p>The 6502 Assembler and Interpreter Project is a project to create an assembler and interpreter of the 6502 8-bit microprocessor used in many early home computers such as the Commodorc Vic-20, the Apple II, the Atari 800, the NES and many more for the SmileBASIC language and interpreter available on the 3DS. I am creating this, not to be useful out of the box, but to open up the opportunity for emulators of perhaps the NES and the Commodore 64 to be made by others.</p>
-				<p>The project had started out with a lot of research. I had researched the ins and outs of the processor. Then I had researched the assembly language of the processor. Then, I had created some basic programs for the NES as a test of how to use the langauge. Then I had started with a chart of opcodes and behaviours for each instruction for the processor, simply implementing each opcode into the assembler. Then, later, as this project is still a work in progress, I will work on being able to use higher level functions such as labels, and directives such as includes and data to make it more full. On the interpreter side, I have begun work on the archetecture of the example machine (I want it to be simple so it is out of the way of how the processor works internally) and have implemented some of the basic instructions such as LDX and ADD, etc.</p>
+				<p>The 6502 Assembler and Interpreter Project is a project to create an assembler and interpreter of the 6502 8-bit microprocessor used in many early home computers such as the Commodore Vic-20, the Apple II, the Atari 800, the NES and many more for the SmileBASIC language and interpreter available on the 3DS. I am creating this, not to be useful out of the box, but to open up the opportunity for emulators of perhaps the NES and the Commodore 64 to be made by others.</p>
+				<p>The project had started out with a lot of research. I had researched the ins and outs of the processor. Then I had researched the assembly language of the processor. Then, I had created some basic programs for the NES as a test of how to use the language. Then I had started with a chart of opcodes and behaviors for each instruction for the processor, simply implementing each opcode into the assembler. Then, later, as this project is still a work in progress, I will work on being able to use higher level functions such as labels, and directives such as includes and data to make it more full. On the interpreter side, I have begun work on the architecture of the example machine (I want it to be simple so it is out of the way of how the processor works internally) and have implemented some of the basic instructions such as LDX and ADD, etc.</p>
 			</div>
 		</div>
 	</section>

@@ -20,17 +20,17 @@
 	</div>
 
 	<div class="card" id="fight">
-		<div class="info">
-			<h4>The Fight of The Century</h4>
-			<p>Chiptune</p>
+		<div class="thumbnail">
+
 		</div>
 		<div class="player">
 			<audio preload="metadata" controls>
 				<source src="audio/fight-of-the-century.mp3" type="audio/mpeg">
 			</audio>
 		</div>
-		<div class="thumbnail">
-
+		<div class="info">
+			<h4>The Fight of The Century</h4>
+			<p>Chiptune</p>
 		</div>
 	</div>
 
@@ -50,17 +50,17 @@
 	</div>
 
 	<div class="card" id="walk">
-		<div class="info">
-			<h4>Walk Through The Dark Forest</h4>
-			<p>Classical</p>
+		<div class="thumbnail">
+
 		</div>
 		<div class="player">
 			<audio preload="metadata" controls>
 				<source src="audio/walk-through-dark-forest.mp3" type="audio/mpeg">
-			</audio>
-		</div>
-		<div class="thumbnail">
-
+				</audio>
+			</div>
+		<div class="info">
+			<h4>Walk Through The Dark Forest</h4>
+			<p>Classical</p>
 		</div>
 	</div>
 </article>

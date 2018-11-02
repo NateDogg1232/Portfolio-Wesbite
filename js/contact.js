@@ -1,4 +1,3 @@
-
 var cards = document.getElementsByClassName("card");
 const cardMax = cards.length - 1;
 var cardTop = cards[0].getBoundingClientRect().top;
@@ -11,92 +10,37 @@ for (let i = 0; i <= cardMax; i++) {
 
 updateCardCount();
 
-async function cardRight() {
-    //We first need to update all the cards to reset all of them.
-    await updateCards();
-    //First, we move the current card to the right side
-    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
-    setRight(cards[currentCard]);
-    //And we increment the current card
+function cardRight() {
+    cards[currentCard].style.animationName = "slide-out-right";
+    //Adding a class to it will not affect the keyframe until it's done executing
+    hide(cards[currentCard]);
     currentCard++;
     if (currentCard > cardMax)
         currentCard = 0;
-    //And now we move the current card to the middle.
-    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
-    setCenter(cards[currentCard]);
+    cards[currentCard].style.animationName = "slide-in-left";
+    show(cards[currentCard]);
     updateCardCount();
 }
 
-//This needs to be asynchronous so that we can use the sleep function;
-async function cardLeft() {
-    //We first need to update all the cards to reset all of them.
-    await updateCards();
-    //Then we need to move the next card in queue to the right side.
-    previousCard().style.transitionDuration = "0s"; //Hide the transition
-    setRight(previousCard());
-    //We wait for 1 millisecond just to make sure that the animations occur
-    //before we continue with the function
-    await sleep(1);
-
-    //We set the current card to the left side
-    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
-    setLeft(cards[currentCard]);
-    //And now we move the next card over to the center
-    //We decrement the counter for the current card
+function cardLeft() {
+    cards[currentCard].style.animationName = "slide-out-left";
+    //Adding a class to it will not affect the keyframe until it's done executing
+    hide(cards[currentCard]);
     currentCard--;
     if (currentCard < 0)
         currentCard = cardMax;
-    cards[currentCard].style.transitionDuration = "2s"; //Make sure the transition shows
-    setCenter(cards[currentCard]);
+    cards[currentCard].style.animationName = "slide-in-right";
+    show(cards[currentCard]);
     updateCardCount();
 }
 
-function setCenter(element) {
-    element.classList.remove("left");
-    element.classList.remove("right");
-    element.classList.add("center");
+function show(element) {
+    element.classList.remove("hide");
+    element.classList.add("show");
 }
-
-function setLeft(element) {
-    element.classList.remove("right");
-    element.classList.remove("center");
-    element.classList.add("left");
-}
-
-function setRight(element) {
-    element.classList.remove("left");
-    element.classList.remove("center");
-    element.classList.add("right");
-}
-
-
-//Reset all the cards
-function updateCards() {
-    //We use promises to make sure that this happens.
-    return new Promise(function (resolve) {
-        for (let i = 0; i <= cardMax; i++) {
-            if (i == currentCard) {
-                continue;
-            }
-            cards[i].style.transitionDuration = "0s"; //Hide the transition
-            setLeft(cards[i]);
-        }
-        resolve();
-    });
-}
-
-function nextCard() {
-    if (currentCard >= cardMax) {
-        return cards[0];
-    }
-    return cards[currentCard + 1];
-}
-
-function previousCard() {
-    if (currentCard <= 0) {
-        return cards[cardMax];
-    }
-    return cards[currentCard - 1];
+function hide(element) {
+    element.classList.remove("show");
+    element.classList.add("hide");
 }
 
 function updateCardCount() {

@@ -1,6 +1,6 @@
 
 <h1>Contact Me</h1>
-<div class="contact">
+<!-- <div class="contact">
 	<p>Please feel free to contact me per this form, or through the provided methods</p>
 	<form class="contact-me-form" action="formsubmit.php?page=contact" method="post" onsubmit="return checkForm();" name="contactme">
 		<div>
@@ -29,7 +29,7 @@
 			?>
 		</div>
 	</form>
-</div>
+</div> -->
 <article id="cards">
 	<div class="arrows">
 		<i class="fas fa-angle-double-left" id="leftarrow" onclick="cardLeft()"></i>
@@ -37,7 +37,7 @@
 		<i class="fas fa-angle-double-right" id="rightarrow" onclick="cardRight()"></i>
 	</div>
 	<div class="cardcontainer">
-		<div class="card center" onclick="location.href='mailto://nathanielbarragan@gmail.com';">
+		<div class="card show" onclick="location.href='mailto://nathanielbarragan@gmail.com';">
 			<i class="img fas fa-envelope"></i>
 			<div class="head">
 				<h3>E-Mail</h3>
@@ -46,16 +46,16 @@
 				<p>nathanielbarragan@gmail.com</p>
 			</div>
 		</div>
-		<div class="card left" onclick="location.href='www.linkedin.com/in/NathanielBarragan';">
-			<i class="img fab fa-linkedin"></i>
+		<div class="card hide">
+			<i class="img fab fa-discord"></i>
 			<div class="head">
-				<h3>Linkedin</h3>
+				<h3>Discord</h3>
 			</div>
 			<div class="link">
-				<p>Linkedin</p>
+				<p>NateDogg1232#0753</p>
 			</div>
 		</div>
-		<div class="card left" onclick="location.href='mailto://nathanielbarragan@gmail.com';">
+		<div class="card hide">
 			<i class="img fas fa-phone"></i>
 			<div class="head">
 				<h3>Phone</h3>
