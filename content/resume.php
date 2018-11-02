@@ -13,7 +13,7 @@
 						<img width="400" height="400" src="img/cart-logo.png" alt="CART Logo">
 					</header>
 					<ul>
-						<li>Web Development
+						<li>Web Development (Aug 2017 - Jun 2018)
 							<ul>
 								<li>Use CSS effectively</li>
 								<li>Layout using HTML</li>
@@ -21,7 +21,7 @@
 								<li>Back end programming using PHP and SQL</li>
 							</ul>
 						</li>
-						<li>Interactive Game Design
+						<li>Interactive Game Design (Aug 2018 - Current)
 							<ul>
 								<li>Use Unity to set up environments</li>
 								<li>Use C# and the Unity engine effectively</li>
@@ -33,7 +33,7 @@
 				</section>
 				<section>
 					<header>
-						<h4>Clovis West High School</h4>
+						<h4>Clovis West High School(Aug 2015 - Current)</h4>
 						<img width="400" height="400" src="img/cw-logo.jpg" alt="Clovis West Logo">
 					</header>
 					<ul>
@@ -47,9 +47,9 @@
 						<h3>Extracurricular Activities</h3>
 					</header>
 					<ul>
-						<li>Chamber Choir <i>(Aug 2014-present)</i></li>
-						<li>Chamber Orchestra <i>(Aug 2014-present)</i></li>
-						<li>Fresno/Madera County Honors' Choir <i>(2014)</i></li>
+						<li>Chamber Choir <i>(Aug 2015-present)</i></li>
+						<li>Chamber Orchestra <i>(Aug 2015-present)</i></li>
+						<li>Fresno/Madera County Honors' Choir <i>(2015)</i></li>
 					</ul>
 				</section>
 				<section id="lang">
