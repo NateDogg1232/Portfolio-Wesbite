@@ -1,13 +1,18 @@
 @import 'vars';
 body#music {
+	a {
+		color: $dark-action-color;
+	}
 	.card {
+		padding: 0;
 	    display: flex;
 	    align-content: center;
 	    .thumbnail {
-	        width: 16%;
+	        width: 20%;
 			height: 100%;
 	        background-image: url(http://via.placeholder.com/350x350);
 	        background-size: contain;
+			background-position: center;
 	        background-repeat: no-repeat;
 	    }
 	    .player {
@@ -21,7 +26,7 @@ body#music {
 	        }
 	    }
 	    .info {
-	        width: 19%;
+	        width: 20%;
 	    }
 	    margin-bottom: 50px;
 	    height: 200px;

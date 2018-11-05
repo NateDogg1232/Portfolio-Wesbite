@@ -64,3 +64,9 @@
 		</div>
 	</div>
 </article>
+<article class="outro">
+	<h3 class="centertext">For more music, you can check the other websites I post my music on</h3>
+	<ul>
+		<li><a href="https://soundcloud.com/nathaniel-barragan-music">SoundCloud</a></li>
+	</ul>
+</article>

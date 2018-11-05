@@ -3,9 +3,6 @@
 var hamburgerMenuIsOpen = false
 var hamburgerTimeout = null;
 
-var hamburgerClass = document.getElementById("hamburger").getAttribute("class");
-
-var subMenuHeight = document.getElementById("hiddenlist").offsetHeight;
 document.getElementById("hiddenlist").style.height = "0px";
 document.getElementById("hiddenlist").style.transition = "height 1s";
 
@@ -14,21 +11,24 @@ function onHamburgerClick() {
     hamburger = document.getElementById("hamburger");
     hamburgerMenu = document.getElementById("hamburger-menu");
     if (!hamburgerMenuIsOpen) {
-        hamburger.setAttribute("class", "transition");
-        hamburgerMenu.setAttribute("class", "transition");
+        hamburger.classList.add("transition");
+        hamburgerMenu.classList.add("transition");
         hamburgerMenuIsOpen = true;
     } else {
         hamburgerMenuIsOpen = false;
-        hamburger.setAttribute("class", "");
-        hamburgerMenu.setAttribute("class", "");
+        hamburger.classList.remove("transition");
+        hamburgerMenu.classList.remove("transition");
         clearTimeout(hamburgerTimeout);
     }
 }
 
+window.on
+
+
 function subMenuOpen() {
     subMenu = document.getElementById("hiddenlist");
     //Set the height of the menu to its original height
-    subMenu.style.height = subMenuHeight + "px";
+    subMenu.style.height = subMenu.scrollHeight + "px";
 }
 
 function subMenuClose() {
@@ -39,9 +39,4 @@ function subMenuClose() {
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-
-function dothing() {
-    alert("i see you're snooping around...");
 }

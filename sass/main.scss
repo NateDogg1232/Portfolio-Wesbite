@@ -49,7 +49,7 @@ h1 {
 .pagewrap {
     max-width: $max-width;
     margin: auto;
-    //padding: 0px 5%;
+    padding: 0 30px;
 }
 
 
@@ -69,28 +69,23 @@ header {
     position: fixed;
     left: 0px;
     top: 0px;
-    width: 50px;
-    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px;
     transition-duration: 1s;
     img {
         display: block;
         padding: 0px;
         margin: 0px;
     }
-}
-
-#hamburger {
-    display: inline-block;
-    position: fixed;
-    cursor: pointer;
-    //background-color: $back-color;
+    background-color: $back-color;
     #bar1,
     #bar2,
     #bar3 {
-        width: 35px;
+        width: 40px;
         height: 5px;
         background-color: $fore-color;
-        margin: 6px 0;
+        margin: 8px 0;
         transition: 1s;
         border-radius: 0px;
 
@@ -100,26 +95,30 @@ header {
 #hamburger.transition {
     left: 200px;
     #bar1 {
-        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 8px);
     }
     #bar2 {
         opacity: 0;
     }
     #bar3 {
-        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-9px, -10px);
     }
+}
+
+#hamburger-menu.transition {
+    margin-left: 0px;
+    width: 200px;
 }
 
 #hamburger-menu {
     position: fixed;
     height: 100vh;
     margin-left: -100px;
-    visibility: hidden;
     width: 100px;
     transition-duration: 1s;
     transition-property: margin, width;
     background-color: $fore-color;
-    opacity: 0.95;
+    opacity: 0.9;
     z-index: 100000000000000;
     ul {
         list-style: none;
@@ -139,7 +138,7 @@ header {
         background-color: $accent-color;
         color: $fore-color;
     }
-    .linkcontainer {
+    #linkcontainer {
         display: inline-block;
         width: 100%;
         padding-top: 10px;
@@ -147,7 +146,7 @@ header {
         text-align: center;
         color: $back-color;
     }
-    .linkcontainer:hover {
+    #linkcontainer:hover {
         background-color: $accent-color;
         color: $fore-color;
     }
@@ -159,12 +158,6 @@ header {
         color: $back-color;
     }
 
-}
-
-#hamburger-menu.transition {
-    margin-left: 0px;
-    width: 200px;
-    visibility: visible;
 }
 
 a {
