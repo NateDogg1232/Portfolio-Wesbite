@@ -1,8 +1,8 @@
 //Made for node.js
 var sass = require('node-sass');
 var fs = require('fs');
-const cssFolder = "css";
-const sassFolder = "sass";
+const cssFolder = "website/css";
+const sassFolder = "website/sass";
 
 var fsTimeout = false;
 
